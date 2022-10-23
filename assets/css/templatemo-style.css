@@ -34,9 +34,9 @@ body {
 
 .introduction-content {
     text-align: left;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/NestFesta.jpg);
-    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/NestFesta.jpg);
-    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/NestFesta.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/DS106503-1-min.jpg);
+    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/DS106503-1-min.jpg);
+    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/DS106503-1-min.jpg);
 }
 
 .introduction-content h2 {
@@ -887,6 +887,12 @@ section.contact-me {
     overflow: hidden;
     position: relative;
     width: 600px;
+    padding-left: 2vmin;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   
   .textAnH1Span {
@@ -902,7 +908,7 @@ section.contact-me {
     overflow: hidden;
     position: absolute;
     padding-left: 0.5rem;
-    left: 360px;
+    left: 380px;
     animation: openclose 5s ease-in-out infinite; 
   } 
   
