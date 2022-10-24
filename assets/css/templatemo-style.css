@@ -731,138 +731,16 @@ section.contact-me {
     text-align: center;
 }
 
-@media screen and (max-width: 1680px) {
-    .menu {
-        left: 5%;
-    }
-
-    .section {
-        color: #fff;
-        width: 65%;
-        right: 5%;
-        left: 30%;
-    }
-}
-
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
-    .menu .social-network ul li a {
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
-    }
-
-    .menu .social-network ul li {
-        margin: 0;
-    }
-
-    .menu .image {
-        margin-top: 60px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .menu {
-        left: 0%;
-    }
-
-    .right-image-post h4,
-    .left-image-post h4 {
-        margin-top: 0px;
-    }
-
-    .right-image-post p,
-    .left-image-post p {
-        margin-top: 15px;
-    }
-
-    .right-image-post .white-button,
-    .left-image-post .white-button {
-        margin-top: 25px;
-    }
-
-}
 
 .menu .container {
     padding-left: 0;
     padding-right: 0;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 846px) {
-    .menu {
-        width: 25%;
-    }
-}
-
 #menu-toggle,
 #menu-close {
     display: none;
 }  
-
-@media screen and (max-width: 845px) {        
-    #menu-toggle,
-    #menu-close {
-        display: inline-block;
-    }    
-
-    .menu {        
-        width: 320px;
-        -webkit-transform: translateX(-100%) !important;
-        transform: translateX(-100%) !important;
-        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
-        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-    }
-
-    .menu .image {
-        margin-top: 40px;        
-    }
-
-    .menu .image img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .menu .author-content {
-        margin: 20px 0px 40px 0px;
-    }
-
-    .menu .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .menu.open {
-        display: inline-block;
-        -webkit-transform: translateX(0) !important;
-                transform: translateX(0) !important;
-    }
-
-    .responsive-nav {
-        display: inline-block;
-    }
-    .section {
-        width: 94%;
-        right: 3%;
-        left: 3%;
-    }
-    .isotope-item {
-        width: 94%;
-        margin: 3%;
-    }
-    .left-image-post img {
-        margin-bottom: 30px;
-    }
-    .right-image-post img {
-        margin-top: 30px;
-    }
-    .isotope-item {
-        border-bottom: none;
-        text-align: center;
-    }
-    .isotope-toolbar {
-        margin-bottom: 20px;
-    }
-}
 
 * {
     box-sizing: border-box;
@@ -885,6 +763,7 @@ section.contact-me {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
+    text-align: center;
     width: 600px;
     padding-left: 2vmin;
     -webkit-box-orient: vertical;
@@ -895,19 +774,34 @@ section.contact-me {
   }
   
   .textAnH1Span {
-    font-size: 40px;
+    font-size: 3rem;
     margin-left: 0px;
   }
   
+  .messageContainer{
+    font-size: 3rem;
+    overflow: hidden;
+    height: 4rem;
+    width: 36rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    -webkit-box-align: center;
+  }
+
   .message {
     background-color: red;
     color: #333; 
     display: block;
     font-weight: 900;
     overflow: hidden;
-    position: absolute;
-    padding-left: 0.5rem;
-    left: 380px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    -webkit-box-align: center;
     animation: openclose 5s ease-in-out infinite; 
   } 
   
@@ -930,11 +824,11 @@ section.contact-me {
       width: 0;
     }
     15% {
-      width: 150px;
+      width: 12rem;
     }
     30% {
       top: 0.2rem;
-      width: 150px;
+      width: 12rem;
     }
     33% {
       top: 0.2rem;
@@ -950,11 +844,11 @@ section.contact-me {
     }
     48% {
       top: -4.5rem;
-      width: 185px;
+      width: 12rem;
     }
     62% {
       top: -4.5rem;
-      width: 185px;
+      width: 12rem;
     }
     66% {
       top: -4.5rem;
@@ -968,11 +862,11 @@ section.contact-me {
     }
     86% {
       top: -9rem;
-      width: 185px;
+      width: 12rem;
     }
     95% {
       top: -9rem;
-      width: 185px;
+      width: 12rem;
     }
     98% {
       top: -9rem;
