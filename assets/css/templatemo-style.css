@@ -781,13 +781,34 @@ section.contact-me {
     font-size: 25pt;
     overflow: hidden;
     height: 25pt;
-    padding-left: 205pt;
     text-align: center;
     align-items: center;
     align-self: center;
     -webkit-box-align: center;
   }
 
+   @media (min-width:1079px) {
+    .messageContainer{
+        padding-left: 42%;
+
+    }
+    
+   }
+
+   @media (max-width:1078px) {
+    .messageContainer{
+        padding-left: 42%;
+
+    }
+    
+   }
+   @media (max-width:679px) {
+    .messageContainer{
+        padding-left: 35%;
+
+    }
+    
+   }
   .message {
     background-color: red;
     color: #333; 
