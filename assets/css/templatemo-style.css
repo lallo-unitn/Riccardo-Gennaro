@@ -9,8 +9,13 @@ https://templatemo.com/tm-531-reflux
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
+:root{
+  color-scheme: dark;
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    scrollbar-color: dark;
 }
 
 .introduction-content div {
@@ -34,9 +39,9 @@ body {
 
 .introduction-content {
     text-align: left;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/NestFesta.jpg);
-    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/NestFesta.jpg);
-    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/NestFesta.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.5)), to(rgba(4, 14, 17, 0.5))), url(../images/NestFestaEdit.jpg);
+    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.5), rgba(4, 14, 17, 0.5)), url(../images/NestFestaEdit.jpg);
+    background-image: linear-gradient(rgba(4, 14, 17, 0.5), rgba(4, 14, 17, 0.5)), url(../images/NestFestaEdit.jpg);
 }
 
 .introduction-content h2 {
@@ -60,16 +65,17 @@ body {
 
 .parallax-content {
 width: 100%;
-min-height: 100vh;
+min-height: 80vh;
+max-height: 100vh;
 background-size: cover;
 background-position: center center;
 }
 
 #page-wraper {
     padding: 5vmin 5vmin 2vmin 5vmin;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/valdagno.jpg);
-    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/valdagno.jpg);
-    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/valdagno.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/graph.png);
+    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
+    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
     background-attachment: fixed;
     min-height: 100vh;
     background-size: cover;
@@ -863,6 +869,12 @@ figure.snip1321.hover:after {
     
    }
 
+   @media (max-width:346px) {
+    .textanimation{
+      display: none;
+    }
+    
+   }
 
   .message {
     background-color: red;
