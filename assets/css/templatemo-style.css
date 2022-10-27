@@ -11,11 +11,12 @@ https://templatemo.com/tm-531-reflux
 
 :root{
   color-scheme: dark;
+  scrollbar-color: black #2C2C2C;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    scrollbar-color: dark;
+    scrollbar-color: black #2C2C2C;
 }
 
 .introduction-content div {
