@@ -11,12 +11,21 @@ https://templatemo.com/tm-531-reflux
 
 :root{
   color-scheme: dark;
-  scrollbar-color: black #2C2C2C;
+  scrollbar-color: #2C2C2C black ;
 }
 
 body {
     font-family: 'Lato', sans-serif;
     scrollbar-color: black #2C2C2C;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/graph.png);
+    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
+    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+    height: 100vh;
 }
 
 .introduction-content div {
@@ -72,17 +81,8 @@ background-size: cover;
 background-position: center center;
 }
 
-#page-wraper {
+#page-wrapper {
     padding: 5vmin 5vmin 2vmin 5vmin;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/graph.png);
-    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
-    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
-    background-attachment: fixed;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-position-x: center;
-    background-position-y: center;;
 }
 
 /* Basic */
@@ -203,15 +203,8 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.footerContainer {
-  display: flex;
-  background: #333;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
 
 .footer {
-  position: relative;
   width: 100%;
   background: #224197;
   min-height: 100px;
@@ -221,6 +214,8 @@ html {
   align-items: center;
   flex-direction: column;
   background-image: linear-gradient(to top, #224197, #3586ff);
+  margin-bottom: 0px;
+  position: absolute;
 }
 
 .social-icon,
@@ -269,7 +264,7 @@ html {
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .wave {
@@ -679,6 +674,7 @@ figure.snip1321.hover:after {
 .studiorum{
   padding-left: 5px;
   padding-right: 5px;
+  border-bottom: none;
 }
 
 .logosWrapper{
