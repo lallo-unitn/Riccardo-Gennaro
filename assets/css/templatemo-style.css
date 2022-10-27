@@ -698,9 +698,11 @@ figure.snip1321.hover:after {
     width: 200px;
     -webkit-border-radius: 200px;
     border-radius: 200px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin-left: 140px;
+    margin-right: 140px ;
+  }
+  .resumeLogo{
+    top: 60px;
   }
  }
 
@@ -710,9 +712,11 @@ figure.snip1321.hover:after {
     width: 175px;
     -webkit-border-radius: 175px;
     border-radius: 175px;
-    margin-left: 82px;
-    margin-right: 82px;
-    margin-bottom: 82px;
+    margin-left: 122px;
+    margin-right: 122px;
+  }
+  .resumeLogo{
+    top: 52px;
   }
  }
 
@@ -722,9 +726,11 @@ figure.snip1321.hover:after {
     width: 125px;
     -webkit-border-radius: 125px;
     border-radius: 125px;
-    margin-left: 62px;
-    margin-right: 62px;
-    margin-bottom: 62px;
+    margin-left: 87px;
+    margin-right: 87px;
+  }
+  .resumeLogo{
+    top: 37px;
   }
  }
 
@@ -734,9 +740,11 @@ figure.snip1321.hover:after {
     width: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .resumeLogo{
+    top: 30px;
   }
 }
 
@@ -748,7 +756,9 @@ figure.snip1321.hover:after {
       border-radius: 85px;
       margin-left: 42px;
       margin-right: 42px;
-      margin-bottom: 42px;
+    }
+    .resumeLogo{
+      top: 25px;
     }
  }
 
@@ -768,12 +778,12 @@ figure.snip1321.hover:after {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
   margin-bottom: 5vmin;
 }
-.unitnWrap{
+.wrap{
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -783,6 +793,7 @@ figure.snip1321.hover:after {
   background-image: url(../images/unitn.png);
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 0;
   align-self: center;
   text-align: center;
 }
@@ -793,6 +804,15 @@ figure.snip1321.hover:after {
 
 .ABRSMLogo{
   background-image: url(../images/abrsm.jpg);
+}
+
+.resumeLogo{
+  background-image: url(../images/cv.jpg);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }
 
 .logoText{

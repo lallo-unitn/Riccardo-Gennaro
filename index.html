@@ -229,7 +229,6 @@ https://templatemo.com/tm-531-reflux
                   </div>
                   English - Level: B2
                 </div>
-                
               </div>
             </div>
           </div>
@@ -238,7 +237,7 @@ https://templatemo.com/tm-531-reflux
 
       <section class="section studiorum">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading" style="margin-bottom: 3em;">
             <h2>Curriculum studiorum & vitae</h2>
             <div class="line-dec"></div>
             <span
@@ -246,11 +245,17 @@ https://templatemo.com/tm-531-reflux
             >
           </div>
           <div id="reloadWrap">
-            <div class="unitnWrap" style="margin-bottom: 4.5%;">
-              <a href="https://www.disi.unitn.it/about/department-of-excellence"   target="_blank">
+            <div class="wrap">
+              <a href="https://www.disi.unitn.it/about/department-of-excellence" target="_blank">
                 <div class="logo unitnLogo" id="reloadUni"></div>
               </a>
             </div>
+            <div class="wrap">
+              <a href="/assets/pdf/Riccardo_Gennaro_CV_ENG_PUBLIC.pdf" type="application/pdf" target="_blank">
+              <div class="logo resumeLogo" id="resumeLogo"></div>
+            </a>
+            </div>
+            
             <div class="studioImgContainer">
               <a href="https://liceivaldagno.edu.it/didattica/indirizzi-di-studio/liceo-scienze-applicate" target="_blank">
                 <div class="logo trissinoLogo" id="reloadLic"></div>
@@ -350,7 +355,7 @@ https://templatemo.com/tm-531-reflux
       });
 
       window.onscroll = function () {
-          scrollRotate();
+        scrollRotate();
       };
 
       function scrollRotate() {
@@ -358,10 +363,13 @@ https://templatemo.com/tm-531-reflux
           let uni = document.getElementById("reloadUni");
           let lic = document.getElementById("reloadLic");
           let abrsm = document.getElementById("reloadAbrsm");
+          let resume = document.getElementById("resumeLogo");
+          resumeLogo
           wrap.style.transform = "rotate(" + (window.pageYOffset/6) + "deg)";
           uni.style.transform = "rotate(" + -(window.pageYOffset/6) + "deg)";
           lic.style.transform = "rotate(" + -(window.pageYOffset/6) + "deg)";
           abrsm.style.transform = "rotate(" + -(window.pageYOffset/6) + "deg)";
+          resume.style.transform = "rotate(" + -(window.pageYOffset/6) + "deg)";
       };
 
     </script>
