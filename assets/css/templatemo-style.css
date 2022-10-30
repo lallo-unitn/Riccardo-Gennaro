@@ -18,8 +18,8 @@ body {
     font-family: 'Lato', sans-serif;
     scrollbar-color: black #2C2C2C;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 17, 0.6)), to(rgba(4, 14, 17, 0.6))), url(../images/graph.png);
-    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
-    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph.png);
+    background-image: -o-linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph-min.png);
+    background-image: linear-gradient(rgba(4, 14, 17, 0.6), rgba(4, 14, 17, 0.6)), url(../images/graph-min.png);
     height: 110vh;
 }
 
