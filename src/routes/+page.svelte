@@ -65,7 +65,7 @@
 	let bachelor = [
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Trento</span> ' +
-			'<span class="font-medium text-gray-600 dark:text-hush-grey-100">> <br> Bachelor&#39s Degree, Computer Science </span> <br>' +
+			'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Bachelor&#39s Degree, Computer Science </span> <br>' +
 			'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2019 - Dec 2022</span> <br>' +
 				'<span class="base text-gray-900 dark:text-white">Grade: 101/110<br>',
 			src: utrento,
