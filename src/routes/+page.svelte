@@ -431,7 +431,6 @@
 			</span>
 		</h1>
 	</div>
-	<div class="md: mx-32">
 		<Gallery gap="15">
 			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={tann} alt="tann">
 			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={people_choice} alt="people_choice">
@@ -443,7 +442,6 @@
 			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={defence} alt="defence">
 			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={print} alt="print">
 		</Gallery>
-	</div>
 		
 
 	<div class="max-w-screen-xl p-4 mt-4" id="exp">
