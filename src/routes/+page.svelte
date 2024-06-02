@@ -40,8 +40,8 @@
 	let master = [
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Twente</span> ' +
-				'<span class="font-medium text-gray-900 dark:text-hush-grey-300"> <br> Mater&#39s Degree, Cybersecurity </span> <br>' +
-				'<span class="text-sm font-medium text-gray-900 dark:text-hush-grey-300">Sep 2023 - Sep 2025</span> <br>' +
+				'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Master&#39s Degree, Cybersecurity </span> <br>' +
+				'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2023 - Sep 2025</span> <br>' +
 				'<span class="font-base text-gray-900 dark:text-white">My double degree exit point</span>',
 			src: utwente,
 			alt: 'utwente',
@@ -51,8 +51,8 @@
 		},
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Trento</span> ' +
-				'<span class="font-medium text-gray-900 dark:text-hush-grey-300"> <br> Mater&#39s Degree, Cybersecurity </span> <br>' +
-				'<span class="text-sm font-medium text-gray-900 dark:text-hush-grey-300">Sep 2023 - Sep 2025</span> <br>' +
+				'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Master&#39s Degree, Cybersecurity </span> <br>' +
+				'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2023 - Sep 2025</span> <br>' +
 				'<span class="base text-gray-900 dark:text-white">My double degree entry point</span>',
 			src: utrento,
 			alt: 'utrento',
@@ -65,8 +65,8 @@
 	let bachelor = [
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Trento</span> ' +
-				'<span class="font-medium text-gray-900 dark:text-hush-grey-300"> <br> Bachelor&#39s Degree, Computer Science </span> <br>' +
-				'<span class="text-sm font-medium text-gray-900 dark:text-hush-grey-300">Sep 2019 - Dec 2022</span> <br>' +
+			'<span class="font-medium text-gray-600 dark:text-hush-grey-100">> <br> Bachelor&#39s Degree, Computer Science </span> <br>' +
+			'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2019 - Dec 2022</span> <br>' +
 				'<span class="base text-gray-900 dark:text-white">Grade: 101/110<br>',
 			src: utrento,
 			alt: 'utrento',
@@ -79,8 +79,8 @@
 	let high_school = [
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">Liceo Gian Giorgio Trissino</span> ' +
-				'<span class="font-medium text-gray-900 dark:text-hush-grey-300"> <br> Liceo Scientifico Tecnologico </span> <br>' +
-				'<span class="text-sm font-medium text-gray-900 dark:text-hush-grey-300">Sep 2014 - Jun 2019</span> <br>',
+			'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Liceo Scientifico Tecnologico </span> <br>' +
+			'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2014 - Jun 2019</span> <br>',
 			src: liceo,
 			alt: 'liceo',
 			href: 'https://liceivaldagno.edu.it/',
