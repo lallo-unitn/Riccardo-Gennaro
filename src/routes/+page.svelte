@@ -23,7 +23,13 @@
 	import matteo from '$lib/assets/matteo.jpg';
 	import riccardo from '$lib/assets/riccardo.jpeg';
 	import jan from '$lib/assets/jan.jpg';
+	import thesis from '$lib/assets/bachelor_thesis.png';
+	import thesis_pdf from '$lib/assets/bachelor_thesis.pdf';
+	import crypto from '$lib/assets/crypto_project.png';
+	import crypto_pdf from '$lib/assets/crypto_project.pdf';
+
 	import {
+		Card,
 		Navbar,
 		NavBrand,
 		NavHamburger,
@@ -421,31 +427,70 @@
 	{/if}
 </MediaQuery>
 
+
+
 <div class="px-2 container my-6 mx-auto md:px-6" id="top">
+
 
 	<div class="max-w-screen-xl p-4" id="exp">
 		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
+			My Uni
+			<span class="text-hush-blue-500">
+				Projects
+			</span>
+		</h1>
+	</div>
+
+	<div class="flex flex-row flex-wrap gap-10 justify-items-center justify-center mt-4 mb-16">
+
+		<div class="space-y-4">
+			<Card img={thesis} horizontal size="lg">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">An overview of ICS vulnerabilities,
+				threats, and security measures</h5>
+			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">This work is divided into two parts. The first part presents an overview of security frameworks, Supervisory Control And Data Acquisition (SCADA) architecture, attack vectors, and adversary common
+				modus operandi.</p>
+				<div class="flex mt-4 md:mt-6">
+					<a href={thesis_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+				</div>
+			</Card>
+	 	 </div>
+
+		<div class="space-y-4">
+			<Card img={crypto} horizontal size="lg">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Esse3-Bootleg</h5>
+			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">This project aims to develop a web app designed for student career management and teacher course management and mark assignments for the course of Advanced Programming of Cryptographic Methods. The application offers authentication, role-based access, and tailored dashboards.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={crypto_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					<a href="https://github.com/lallo-unitn/Esse3-Bootleg-APFCM" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
+				</div>
+			</Card>
+		</div>
+
+	</div>
+
+	<div class="max-w-screen-xl p-4" id="exp">
+		<h1 class="text-white text-4xl md:text-6xl text-right ml-auto font-bold mt-5 mb-5">
 			Compromising
 			<span class="text-hush-blue-500">
 				Evidence
 			</span>
 		</h1>
 	</div>
-		<Gallery gap="15">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={tann} alt="tann">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={people_choice} alt="people_choice">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={horse} alt="horse">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={degree} alt="defence">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={testing} alt="testing">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={mask} alt="mask">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={stall} alt="stall">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={defence} alt="defence">
-			<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={print} alt="print">
-		</Gallery>
+	<Gallery gap="15">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={tann} alt="tann">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={people_choice} alt="people_choice">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={horse} alt="horse">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={degree} alt="defence">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={testing} alt="testing">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={mask} alt="mask">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={stall} alt="stall">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={defence} alt="defence">
+		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={print} alt="print">
+	</Gallery>
 		
 
 	<div class="max-w-screen-xl p-4 mt-4" id="exp">
-		<h1 class="text-white text-right text-4xl md:text-6xl ml-auto font-bold mt-5 mb-5">
+		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
 			My
 			<span class="text-hush-blue-500">
 				Buddies
