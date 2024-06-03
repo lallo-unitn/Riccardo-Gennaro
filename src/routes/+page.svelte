@@ -27,9 +27,14 @@
 	import thesis_pdf from '$lib/assets/bachelor_thesis.pdf';
 	import crypto from '$lib/assets/crypto_project.png';
 	import crypto_pdf from '$lib/assets/crypto_project.pdf';
+	import web_arch from '$lib/assets/Assignment5.png';
+	import web_arch_pdf from '$lib/assets/assignments_merged.pdf';
+	import dhv from '$lib/assets/DHV_case_study.png';
+	import dhv_pdf from '$lib/assets/DHV_case_study.pdf';
+	import prot from '$lib/assets/prot.jpg';
+	import prot_pdf from '$lib/assets/TECHNICAL_POSTER.pdf';
 
 	import {
-		Card,
 		Navbar,
 		NavBrand,
 		NavHamburger,
@@ -38,6 +43,7 @@
 		Timeline,
 		TimelineItem
 	} from 'flowbite-svelte';
+	
 	import MediaQuery from 'svelte-media-queries';
 	import { CalendarWeekSolid } from 'flowbite-svelte-icons';
 	import { page } from '$app/stores';
@@ -432,7 +438,7 @@
 <div class="px-2 container my-6 mx-auto md:px-6" id="top">
 
 
-	<div class="max-w-screen-xl p-4" id="exp">
+	<div class="max-w-screen-xl p-4" id="proj">
 		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
 			My Uni
 			<span class="text-hush-blue-500">
@@ -443,27 +449,67 @@
 
 	<div class="flex flex-row flex-wrap gap-10 justify-items-center justify-center mt-4 mb-16">
 
-		<div class="space-y-4">
-			<Card img={thesis} horizontal size="lg">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">An overview of ICS vulnerabilities,
-				threats, and security measures</h5>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">This work is divided into two parts. The first part presents an overview of security frameworks, Supervisory Control And Data Acquisition (SCADA) architecture, attack vectors, and adversary common
-				modus operandi.</p>
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={prot} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+					OFF-SOUND</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">OFF-SOUND is a start-up project that started in February 2024 in the Business Development Laboratory of the University of Trento. This project aims at developing a solution that enables people to take their phone calls anywhere without having to worry about eavesdroppers.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={prot_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					<a href="https://github.com/orgs/HUSH-MASK/repositories" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
+					<a href="https://hush-mask.github.io/MVP_site/home" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Website</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={thesis} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">An overview of ICS vulnerabilities,
+					threats, and security measures</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work is divided into two parts. The first part presents an overview of security frameworks, Supervisory Control And Data Acquisition (SCADA) architecture, attack vectors, and adversary common
+					modus operandi.</p>
 				<div class="flex mt-4 md:mt-6">
 					<a href={thesis_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
 				</div>
-			</Card>
-	 	 </div>
+			</div>
+		</div>
 
-		<div class="space-y-4">
-			<Card img={crypto} horizontal size="lg">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Esse3-Bootleg</h5>
-			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">This project aims to develop a web app designed for student career management and teacher course management and mark assignments for the course of Advanced Programming of Cryptographic Methods. The application offers authentication, role-based access, and tailored dashboards.</p>
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={crypto} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Esse3-Bootleg</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work was proposed as a final project for the course of Advanced Programming of Cryptographic Metods held by prof. Silvio Ranise. This project aims to develop a web app designed for student career management and teacher course management and mark assignments.</p>
 				<div class="flex gap-5 mt-4 md:mt-6">
 					<a href={crypto_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
 					<a href="https://github.com/lallo-unitn/Esse3-Bootleg-APFCM" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
 				</div>
-			</Card>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={dhv} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A risk assessment on the dutch digital voting system.</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work aims at assessing the security posture of the new Dutch centralized system for vote counting.
+					In this report, the core services, information, and processes are analyzed.</p>
+				<div class="flex mt-4 md:mt-6">
+					<a href={dhv_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={web_arch} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web Architecture Projects Collection</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">Here you can find 5 projects required by prof. Marco Ronchetti for the 2022/23 iteration of the Web Architectures course.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={web_arch_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					<a href="https://github.com/lallo-unitn/WEB_ARC_assignments" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
+				</div>
+			</div>
 		</div>
 
 	</div>
