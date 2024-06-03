@@ -440,7 +440,7 @@
 
 	<div class="max-w-screen-xl p-4" id="proj">
 		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
-			My Uni
+			Some Uni
 			<span class="text-hush-blue-500">
 				Projects
 			</span>
