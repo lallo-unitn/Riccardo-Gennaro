@@ -33,6 +33,8 @@
 	import dhv_pdf from '$lib/assets/DHV_case_study.pdf';
 	import prot from '$lib/assets/prot.jpg';
 	import prot_pdf from '$lib/assets/TECHNICAL_POSTER.pdf';
+	import chatcontrol_pdf from '$lib/assets/chatcontrol.pdf';
+	import chatcontrol from '$lib/assets/chatcontrol.png';
 
 	import {
 		Navbar,
@@ -464,12 +466,25 @@
 		</div>
 
 		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={chatcontrol} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+					Balancing Child Safety and Privacy: <br>An Exploration of the EU's Chatcontrol Proposal</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work explores the recent legislative proposal aimed at combating the proliferation
+					of Child Sexual Abuse Material (CSAM) and online child sexual solicitation.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={chatcontrol_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
 			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={thesis} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">An overview of ICS vulnerabilities,
 					threats, and security measures</h5>
-				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work is divided into two parts. The first part presents an overview of security frameworks, Supervisory Control And Data Acquisition (SCADA) architecture, attack vectors, and adversary common
-					modus operandi.</p>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work focuses on ICS security. In particular, three case studies based on data gathered from the ICSs of three power
+					plants are explored. The studies were produced during an internship collaboration with Atos.</p>
 				<div class="flex mt-4 md:mt-6">
 					<a href={thesis_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
 				</div>
