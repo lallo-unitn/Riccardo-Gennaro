@@ -355,7 +355,7 @@
 			</div>
 			<div class="container my-6 mr-auto max-w-xl px-4 md:px-6">
 				<Timeline order="vertical">
-					<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" classTime="dark:text-gray-300">
+					<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Aug 2024, Trento (TN)" classTime="dark:text-gray-300">
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
