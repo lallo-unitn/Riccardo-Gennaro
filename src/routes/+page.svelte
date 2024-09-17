@@ -297,7 +297,7 @@
 									<span class="text-hush-blue-500"> ! </span> your average CompSci student
 								</p>
 								<p class="mb-6 pb-2 text-hush-white dark:text-hush-white">
-									Computer Science Tutor @ NEST Trento | EIT Cybersecurity master student
+									EIT Cybersecurity master student @ UTwente & UTrento
 								</p>
 								<div class="mb-6 flex flex-wrap">
 									<div class="mb-4 w-full md:w-6/12">
