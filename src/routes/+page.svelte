@@ -35,6 +35,12 @@
 	import prot_pdf from '$lib/assets/TECHNICAL_POSTER.pdf';
 	import chatcontrol_pdf from '$lib/assets/chatcontrol.pdf';
 	import chatcontrol from '$lib/assets/chatcontrol.png';
+	import det_enc from '$lib/assets/det_enc.png';
+	import det_enc_pdf from '$lib/assets/det_enc.pdf';
+	import path_oram from '$lib/assets/path_oram.png';
+	import path_oram_pdf from '$lib/assets/path_oram.pdf';
+	import phr from '$lib/assets/phr.png';
+	import phr_pdf from '$lib/assets/phr.pdf';
 
 	import {
 		Navbar,
@@ -398,7 +404,7 @@
 							During this time, I mainly performed common fixes on computers and smartphones, like wiping disks or replacing components.
 						</p>
 					</TimelineItem>
-					<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdano (IT)" classTime="dark:text-gray-300">
+					<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdagno (IT)" classTime="dark:text-gray-300">
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -442,7 +448,7 @@
 
 	<div class="max-w-screen-xl p-4" id="proj">
 		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
-			Some Uni
+			Some
 			<span class="text-hush-blue-500">
 				Projects
 			</span>
@@ -450,6 +456,48 @@
 	</div>
 
 	<div class="flex flex-row flex-wrap gap-10 justify-items-center justify-center mt-4 mb-16">
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={phr} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+					Enforcing Cryptographic Access Control on a PHR system</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">
+					This work presents a cryptographically enforced access control system for Personal Health Records (PHRs) using Multi-Authority Ciphertext-Policy Attribute-Based Encryption (MA-CP-ABE), ensuring secure data sharing and integrity among diverse users.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={phr_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					<a href="https://github.com/lallo-unitn/phr_access_control" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={path_oram} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+					Simulating Path ORAM accesses</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">
+					This work analyzes Path ORAM's performance, simulating read/write operations, and evaluating overflow probabilities for varying bucket sizes.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={path_oram_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					<a href="https://github.com/lallo-unitn/path-oblivious-ram-simulation" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={det_enc} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+					Information Leakage and Attacks on Deterministic Encryption</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">
+					This work analyzes information leakage in SSE and deterministic encryption, demonstrating vulnerabilities and proposing secure indexing as a mitigation.</p>
+				<div class="flex gap-5 mt-4 md:mt-6">
+					<a href={det_enc_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					<a href="https://github.com/lallo-unitn/inference_on_det_encryption" target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GitHub</a>
+				</div>
+			</div>
+		</div>
 
 		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
 			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={prot} alt="">
