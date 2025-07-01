@@ -196,15 +196,25 @@
 		</div>
 		<div class="container my-6 mr-auto ml-2 max-w-xl px-4 md:px-6 ">
 			<Timeline order="vertical">
-				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" >
+				<TimelineItem title="Computer Science tutor" date="Fondazione Bruno Kessler, Feb 2025 - Present, Trento (TN)" classTime="dark:text-gray-300">
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 						<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
 					</span>
 					</svelte:fragment>
 					<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
-						As a computer science tutor at NEST Trento, I support students in learning C and Java programming, and algorithms design. <br>
-						I enjoy sharing my knowledge and passion for coding, and helping others achieve their academic goals.
+						At FBK I'm working on my Master's thesis on the topic of cryptographic access control for cloud native applications.
+					</p>
+				</TimelineItem>
+				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Aug 2024, Trento (TN)" classTime="dark:text-gray-300">
+					<svelte:fragment slot="icon">
+					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+						<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
+					</span>
+					</svelte:fragment>
+					<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
+						As a computer science tutor at NEST Trento, I supported students in learning C and Java programming, and algorithms design. <br>
+						I enjoyed sharing my knowledge and passion for coding, and helping others achieve their academic goals.
 					</p>
 				</TimelineItem>
 				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" >
