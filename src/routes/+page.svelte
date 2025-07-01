@@ -9,15 +9,6 @@
 	import utrento from '$lib/assets/universitaditrento_logo.jpeg';
 	import liceo from '$lib/assets/logolicei.png';
 	import signature from '$lib/assets/signature.png';
-	import tann from '$lib/assets/tann.jpg';
-	import stall from '$lib/assets/stallman.jpg';
-	import horse from '$lib/assets/horsing_around.jpg';
-	import people_choice from '$lib/assets/people_choice.jpg';
-	import mask from '$lib/assets/mask.jpg';
-	import defence from '$lib/assets/defence.jpg';
-	import degree from '$lib/assets/degree.jpg';
-	import print from '$lib/assets/print.jpg';
-	import testing from '$lib/assets/testing.jpg';
 	import alessio from '$lib/assets/alessio_graduation.png';
 	import demetrio from '$lib/assets/demetrio.jpg';
 	import matteo from '$lib/assets/matteo.jpg';
@@ -56,7 +47,6 @@
 	import { CalendarWeekSolid } from 'flowbite-svelte-icons';
 	import { page } from '$app/stores';
 	import { Group, GroupItem } from 'flowbite-svelte';
-	import Gallery from 'svelte-image-gallery';
 	let master = [
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Twente</span> ' +
@@ -125,12 +115,10 @@
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600 "
 									menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600" />
 	</div>
-	<NavUl {activeUrl} {activeClass} class="order-1 mx-auto bg-hush-grey-600 "
-				 classUl="bg-hush-grey-600 border-hush-blue-800 ">
+	<NavUl {activeUrl} {activeClass} class="order-1 mx-auto bg-hush-grey-600 ">
 		<NavLi class="text-hush-white" href="{base}/">Home</NavLi>
 		<NavLi class="text-hush-white" href="{base}/#exp">Experience</NavLi>
 		<NavLi class="text-hush-white" href="{base}/#edu">Education</NavLi>
-		<NavLi class="text-hush-white" href="{base}/#gallery">Gallery</NavLi>
 		<NavLi class="text-hush-white" href="{base}/#proj">Projects</NavLi>
 	</NavUl>
 </Navbar>
@@ -208,7 +196,7 @@
 		</div>
 		<div class="container my-6 mr-auto ml-2 max-w-xl px-4 md:px-6 ">
 			<Timeline order="vertical">
-				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" classTime="dark:text-gray-300">
+				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" >
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 						<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
@@ -219,7 +207,18 @@
 						I enjoy sharing my knowledge and passion for coding, and helping others achieve their academic goals.
 					</p>
 				</TimelineItem>
-				<TimelineItem title="Cyber Security Specialist Intern" date="Atos, Mar 2022 - Apr 2022, Milan (IT)" classTime="dark:text-gray-300">
+				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" >
+					<svelte:fragment slot="icon">
+					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+						<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
+					</span>
+					</svelte:fragment>
+					<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
+						As a computer science tutor at NEST Trento, I support students in learning C and Java programming, and algorithms design. <br>
+						I enjoy sharing my knowledge and passion for coding, and helping others achieve their academic goals.
+					</p>
+				</TimelineItem>
+				<TimelineItem title="Cyber Security Specialist Intern" date="Atos, Mar 2022 - Apr 2022, Milan (IT)" >
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -230,7 +229,7 @@
 						As a result of this experience I wrote my bachelor thesis.
 					</p>
 				</TimelineItem>
-				<TimelineItem title="Warehouse assistant" date="Danzo SRL, Jul 2019 - Sep 2019, Valdagno (IT)" classTime="dark:text-gray-300">
+				<TimelineItem title="Warehouse assistant" date="Danzo SRL, Jul 2019 - Sep 2019, Valdagno (IT)" >
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -240,7 +239,7 @@
 						As a summer job during my last year of high school, I was employed as a warehouse worker by Danzo SRL, a textile manufacturer.
 					</p>
 				</TimelineItem>
-				<TimelineItem title="IT support" date="Vencato ICT, Jun 2018 - Jul 2018, Cornedo Vic. (IT)" classTime="dark:text-gray-300">
+				<TimelineItem title="IT support" date="Vencato ICT, Jun 2018 - Jul 2018, Cornedo Vic. (IT)" >
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -251,7 +250,7 @@
 						During this time, I mainly performed common fixes on computers and smartphones, like wiping disks or replacing components.
 					</p>
 				</TimelineItem>
-				<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdano (IT)" classTime="dark:text-gray-300">
+				<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdano (IT)" >
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -361,7 +360,17 @@
 			</div>
 			<div class="container my-6 mr-auto max-w-xl px-4 md:px-6">
 				<Timeline order="vertical">
-					<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Aug 2024, Trento (TN)" classTime="dark:text-gray-300">
+					<TimelineItem title="Security Researcher Intern" date="Fondazione Bruno Kessler, Feb 2025 - present, Trento (Italy)" >
+						<svelte:fragment slot="icon">
+						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
+						</span>
+						</svelte:fragment>
+						<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
+							As an intern I designed alternative privacy-preserving vehicle authentication and authorization protocols compliant with ETSI ITS, developed a Java PoC for evaluating the proposed alternatives to the standard.
+						</p>
+					</TimelineItem>
+					<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Aug 2024, Trento (Italy)" >
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
@@ -372,7 +381,7 @@
 							I enjoy sharing my knowledge and passion for coding, and helping others achieve their academic goals.
 						</p>
 					</TimelineItem>
-					<TimelineItem title="Cyber Security Specialist Intern" date="Atos, Mar 2022 - Apr 2022, Milan (IT)" classTime="dark:text-gray-300">
+					<TimelineItem title="Cyber Security Specialist Intern" date="Atos, Mar 2022 - Apr 2022, Milan (Italy)" >
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -383,7 +392,7 @@
 							As a result of this experience I wrote my bachelor thesis.
 						</p>
 					</TimelineItem>
-					<TimelineItem title="Warehouse assistant" date="Danzo SRL, Jul 2019 - Sep 2019, Valdagno (IT)" classTime="dark:text-gray-300">
+					<TimelineItem title="Warehouse assistant" date="Danzo SRL, Jul 2019 - Sep 2019, Valdagno (Italy)" >
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -393,7 +402,7 @@
 							As a summer job during my last year of high school, I was employed as a warehouse worker by Danzo SRL, a textile manufacturer.
 						</p>
 					</TimelineItem>
-					<TimelineItem title="IT support" date="Vencato ICT, Jun 2018 - Jul 2018, Cornedo Vic. (IT)" classTime="dark:text-gray-300">
+					<TimelineItem title="IT support" date="Vencato ICT, Jun 2018 - Jul 2018, Cornedo Vic. (Italy)" >
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -404,7 +413,7 @@
 							During this time, I mainly performed common fixes on computers and smartphones, like wiping disks or replacing components.
 						</p>
 					</TimelineItem>
-					<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdagno (IT)" classTime="dark:text-gray-300">
+					<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdagno (Italy)" >
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -576,27 +585,6 @@
 		</div>
 
 	</div>
-
-	<div class="max-w-screen-xl p-4" id="exp">
-		<h1 class="text-white text-4xl md:text-6xl text-right ml-auto font-bold mt-5 mb-5">
-			Compromising
-			<span class="text-hush-blue-500">
-				Evidence
-			</span>
-		</h1>
-	</div>
-	<Gallery gap="15">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={tann} alt="tann">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={people_choice} alt="people_choice">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={horse} alt="horse">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={degree} alt="defence">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={testing} alt="testing">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={mask} alt="mask">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={stall} alt="stall">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={defence} alt="defence">
-		<img class="md: transform transition hover:scale-105 hover:shadow-xl" src={print} alt="print">
-	</Gallery>
-		
 
 	<div class="max-w-screen-xl p-4 mt-4" id="exp">
 		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
