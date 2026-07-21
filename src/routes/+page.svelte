@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import photo_of_me from '$lib/assets/photoweb.jpg';
+	import photo_of_me from '$lib/assets/photome.png';
 	import mail from '$lib/assets/mail-open-svgrepo-com.png';
 	import linkedin from '$lib/assets/linkedin-svgrepo-com.png';
 	import github from '$lib/assets/github-142-svgrepo-com.png';
@@ -32,6 +32,9 @@
 	import path_oram_pdf from '$lib/assets/path_oram.pdf';
 	import phr from '$lib/assets/phr.png';
 	import phr_pdf from '$lib/assets/phr.pdf';
+	import master_thesis from '$lib/assets/frontespizio_master.jpg';
+	import paper from '$lib/assets/paper.png';
+	import paper_pdf from '$lib/assets/ACSW_2573.pdf';
 
 	import {
 		Navbar,
@@ -51,8 +54,9 @@
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Twente</span> ' +
 				'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Master&#39s Degree, Cybersecurity </span> <br>' +
+				'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> Grade: Cum Laude </span> <br>' +
 				'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2023 - Sep 2025</span> <br>' +
-				'<span class="font-base text-gray-900 dark:text-white">My double degree exit point</span>',
+				'<span class="font-base text-gray-900 dark:text-white">Relevant Courses: IoT Fundamentals, Cloud Security, Secure Data Management.</span>',
 			src: utwente,
 			alt: 'utwente',
 			href: 'https://www.utwente.nl/en/csc/programme/specializations/cyber-security/',
@@ -62,8 +66,9 @@
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Trento</span> ' +
 				'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Master&#39s Degree, Cybersecurity </span> <br>' +
+				'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> Grade: Cum Laude </span> <br>' +
 				'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2023 - Sep 2025</span> <br>' +
-				'<span class="base text-gray-900 dark:text-white">My double degree entry point</span>',
+				'<span class="base text-gray-900 dark:text-white">Relevant Courses: Security Testing, Cyber Risk Assessment, Applied Cryptography, Network Security.</span>',
 			src: utrento,
 			alt: 'utrento',
 			href: 'https://offertaformativa.unitn.it/en/lm/computer-science/cyber-security',
@@ -76,8 +81,9 @@
 		{
 			title: '<span class="font-medium text-gray-900 dark:text-white">University of Trento</span> ' +
 			'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> <br> Bachelor&#39s Degree, Computer Science </span> <br>' +
+			'<span class="font-medium text-gray-600 dark:text-hush-grey-100"> Grade: 101/110 </span> <br>' +
 			'<span class="text-sm font-medium text-gray-600 dark:text-hush-grey-100">Sep 2019 - Dec 2022</span> <br>' +
-				'<span class="base text-gray-900 dark:text-white">Grade: 101/110<br>',
+			'<span class="base text-gray-900 dark:text-white">Relevant Courses: Web Architectures, Algorithms & Data Structures, OOP, Web Programming.<br>',
 			src: utrento,
 			alt: 'utrento',
 			href: 'https://international.unitn.it/ict/bachelor-in-computer-science',
@@ -135,16 +141,13 @@
 						<div class="mb-12 lg:mb-0">
 							<div class="bg-opacity-5 text-hush-white block bg-hush-grey-900 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-14 backdrop-blur-[30px]">
 								<h2 class="mb-2 pb-2 text-4xl font-bold text-hush-blue-500">RICCARDO GENNARO</h2>
-								<p class="mb-6 pb-2 text-xl font-bold text-hush-white dark:text-hush-white">
-									<span class="text-hush-blue-500"> ! </span> your average CompSci student
-								</p>
 								<p class="mb-6 pb-2 text-hush-white dark:text-hush-white">
-									EIT Cybersecurity master student @ UTwente & UTrento
+									MSc in Computer Science | Former KPMG IT Strategy Consultant
 								</p>
 								<div class="mb-6 flex flex-wrap">
 									<div class="mb-4 w-full">
 										<p class="flex">
-											<img class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600" src="{mail}" alt="mail_logo"> riccardo.gennaro@studenti.unitn.it
+											<img class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600" src="{mail}" alt="mail_logo"> me@riccardogennaro.work
 										</p>
 									</div>
 									<div class="mb-4 w-full">
@@ -196,14 +199,25 @@
 		</div>
 		<div class="container my-6 mr-auto ml-2 max-w-xl px-4 md:px-6 ">
 			<Timeline order="vertical">
-				<TimelineItem title="Computer Science tutor" date="Fondazione Bruno Kessler, Feb 2025 - Present, Trento (TN)" classTime="dark:text-gray-300">
+				<TimelineItem title="IT Strategy Consultant" date="KPMG Nolan Norton, Feb 2026 - Jul 2026, Verona (Italy)" >
 					<svelte:fragment slot="icon">
-					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-						<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
-					</span>
+						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
+						</span>
 					</svelte:fragment>
 					<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
-						At FBK I'm working on my Master's thesis on the topic of cryptographic access control for cloud native applications.
+						Supported the PMO in an Identity Management restructuring project for a leading financial services company. <br>
+						Supported the PMO in a SOX policy compliance project for a leading pharmaceutical company.
+					</p>
+				</TimelineItem>
+				<TimelineItem title="Security Researcher Intern" date="Fondazione Bruno Kessler, Feb 2025 - Dec 2025, Trento (Italy)" >
+					<svelte:fragment slot="icon">
+						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
+						</span>
+					</svelte:fragment>
+					<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
+						Designed an alternative privacy-preserving vehicle authentication and authorization protocols based on ETSI ITS standards and developed a Java PoC for evaluating the proposed alternatives.
 					</p>
 				</TimelineItem>
 				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Aug 2024, Trento (TN)" classTime="dark:text-gray-300">
@@ -237,38 +251,6 @@
 					<p class="text-base font-normal text-hush-white dark:text-hush-white">
 						I joined the Big Data & Security (BDS) team to study the methodologies applied by ATOS as an ICS integration provider.<br>
 						As a result of this experience I wrote my bachelor thesis.
-					</p>
-				</TimelineItem>
-				<TimelineItem title="Warehouse assistant" date="Danzo SRL, Jul 2019 - Sep 2019, Valdagno (IT)" >
-					<svelte:fragment slot="icon">
-					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
-					</span>
-					</svelte:fragment>
-					<p class="text-base font-normal text-hush-white dark:text-hush-white">
-						As a summer job during my last year of high school, I was employed as a warehouse worker by Danzo SRL, a textile manufacturer.
-					</p>
-				</TimelineItem>
-				<TimelineItem title="IT support" date="Vencato ICT, Jun 2018 - Jul 2018, Cornedo Vic. (IT)" >
-					<svelte:fragment slot="icon">
-					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
-					</span>
-					</svelte:fragment>
-					<p class="text-base font-normal text-hush-white dark:text-hush-white">
-						As a summer job between my fourth and fifth year of high school, I worked for Vencato ICT.<br>
-						During this time, I mainly performed common fixes on computers and smartphones, like wiping disks or replacing components.
-					</p>
-				</TimelineItem>
-				<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdano (IT)" >
-					<svelte:fragment slot="icon">
-					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-						<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
-					</span>
-					</svelte:fragment>
-					<p class="text-base font-normal text-hush-white dark:text-hush-white">
-						As a summer job between my second and third year of high school, I was employed as a textile worker by Danzo SRL.<br>
-						There, I learned how to roughly set up an automatic loom and to perform ordinary cleaning.
 					</p>
 				</TimelineItem>
 			</Timeline>
@@ -308,16 +290,14 @@
 						<div class="mb-12 lg:mb-0">
 							<div class="bg-opacity-30 text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-40 backdrop-blur-[30px]">
 								<h2 class="mb-2 pb-2 text-4xl text-hush-blue-500 font-bold">RICCARDO GENNARO</h2>
-								<p class="mb-6 pb-2 text-xl font-bold text-hush-white dark:text-hush-white">
-									<span class="text-hush-blue-500"> ! </span> your average CompSci student
-								</p>
+								<p class="pb-2 text-xl font-bold text-hush-white dark:text-hush-white">
 								<p class="mb-6 pb-2 text-hush-white dark:text-hush-white">
-									EIT Cybersecurity master student @ UTwente & UTrento
+									MSc in Computer Science | Former KPMG IT Strategy Consultant
 								</p>
 								<div class="mb-6 flex flex-wrap">
 									<div class="mb-4 w-full md:w-6/12">
 										<p class="flex">
-											<img class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600" src="{mail}" alt="mail_logo"> riccardo.gennaro@studenti.unitn.it
+											<img class="mr-3 h-5 w-5 text-hush-blue-600 dark:text-hush-blue-600" src="{mail}" alt="mail_logo"> me@riccardogennaro.work
 										</p>
 									</div>
 									<div class="mb-4 w-full md:w-4/12">
@@ -370,14 +350,25 @@
 			</div>
 			<div class="container my-6 mr-auto max-w-xl px-4 md:px-6">
 				<Timeline order="vertical">
-					<TimelineItem title="Security Researcher Intern" date="Fondazione Bruno Kessler, Feb 2025 - present, Trento (Italy)" >
+					<TimelineItem title="IT Strategy Consultant" date="KPMG Nolan Norton, Feb 2026 - Jul 2026, Verona (Italy)" >
 						<svelte:fragment slot="icon">
 						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
 							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
 						</span>
 						</svelte:fragment>
 						<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
-							As an intern I designed alternative privacy-preserving vehicle authentication and authorization protocols compliant with ETSI ITS, developed a Java PoC for evaluating the proposed alternatives to the standard.
+							Supported the PMO in an Identity Management restructuring project for a leading financial services company. <br>
+							Supported the PMO in a SOX policy compliance project for a leading pharmaceutical company.
+						</p>
+					</TimelineItem>
+					<TimelineItem title="Security Researcher Intern" date="Fondazione Bruno Kessler, Feb 2025 - Dec 2025, Trento (Italy)" >
+						<svelte:fragment slot="icon">
+						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+							<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
+						</span>
+						</svelte:fragment>
+						<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
+							Designed an alternative privacy-preserving vehicle authentication and authorization protocols based on ETSI ITS standards and developed a Java PoC for evaluating the proposed alternatives.
 						</p>
 					</TimelineItem>
 					<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Aug 2024, Trento (Italy)" >
@@ -400,38 +391,6 @@
 						<p class="text-base font-normal text-hush-white dark:text-hush-white">
 							I joined the Big Data & Security (BDS) team to study the methodologies applied by ATOS as an ICS integration provider.<br>
 							As a result of this experience I wrote my bachelor thesis.
-						</p>
-					</TimelineItem>
-					<TimelineItem title="Warehouse assistant" date="Danzo SRL, Jul 2019 - Sep 2019, Valdagno (Italy)" >
-						<svelte:fragment slot="icon">
-						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
-						</span>
-						</svelte:fragment>
-						<p class="text-base font-normal text-hush-white dark:text-hush-white">
-							As a summer job during my last year of high school, I was employed as a warehouse worker by Danzo SRL, a textile manufacturer.
-						</p>
-					</TimelineItem>
-					<TimelineItem title="IT support" date="Vencato ICT, Jun 2018 - Jul 2018, Cornedo Vic. (Italy)" >
-						<svelte:fragment slot="icon">
-						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
-						</span>
-						</svelte:fragment>
-						<p class="text-base font-normal text-hush-white dark:text-hush-white">
-							As a summer job between my fourth and fifth year of high school, I worked for Vencato ICT.<br>
-							During this time, I mainly performed common fixes on computers and smartphones, like wiping disks or replacing components.
-						</p>
-					</TimelineItem>
-					<TimelineItem title="Textile worker" date="Danzo SRL, Jun 2016 - Jul 2016, Valdagno (Italy)" >
-						<svelte:fragment slot="icon">
-						<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-							<CalendarWeekSolid class="w-4 h-4 text-primary-600 dark:text-primary-400" />
-						</span>
-						</svelte:fragment>
-						<p class="text-base font-normal text-hush-white dark:text-hush-white">
-							As a summer job between my second and third year of high school, I was employed as a textile worker by Danzo SRL.<br>
-							There, I learned how to roughly set up an automatic loom and to perform ordinary cleaning.
 						</p>
 					</TimelineItem>
 				</Timeline>
@@ -460,6 +419,76 @@
 	{/if}
 </MediaQuery>
 
+<div class="px-2 container my-6 mx-auto md:px-6" id="top">
+
+
+	<div class="max-w-screen-xl p-4" id="proj">
+		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
+
+			<span class="text-hush-blue-500">
+				Publications
+			</span>
+		</h1>
+
+		<div class="flex flex-row flex-wrap gap-10 justify-items-center justify-center mt-4 mb-16">
+
+			<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
+				<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={paper} alt="">
+				<div class="flex flex-col justify-between p-4 leading-normal">
+					<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Revisiting the ETSI ITS Lifecycle with Certificateless Authorization Based on Group Signatures</h5>
+					<p class="mb-3 font-light text-sm text-gray-600 dark:text-gray-300 leading-tight">R.Gennaro, S.Berlato, A.Tomasi, S.Ranise, F.Hahn</p>
+					<p class="mb-3 font-light text-sm text-gray-600 dark:text-gray-300 leading-tight">In: 2026 IEEE European Symposium on Security and Privacy Workshops (EuroS&P) (ACSW 2026)</p>
+					<div class="flex mt-4 md:mt-6">
+						<a href={paper_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+
+<div class="px-2 container my-6 mx-auto md:px-6" id="top">
+
+
+	<div class="max-w-screen-xl p-4" id="proj">
+		<h1 class="text-white text-4xl md:text-6xl mr-auto font-bold mt-5 mb-5">
+			Bachelor and Master
+			<span class="text-hush-blue-500">
+				Thesis
+			</span>
+		</h1>
+	</div>
+
+	<div class="flex flex-row flex-wrap gap-10 justify-items-center justify-center mt-4 mb-16">
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
+			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={master_thesis} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Revisiting the ETSI ITS Lifecycle with Certificateless Authorization Based on Group Signatures</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">The current ETSI standards for ITSs rely heavily on PKIs and pseudonym-based digital certificates to provide message authenticity and user privacy in vehicular communications. This work proposes a standard-compatible redesign of (part of) ETSI’s authentication and authorization lifecycle that replaces pseudonym-based certificates with Group Signatures.</p>
+				<div class="flex mt-4 md:mt-6">
+					<a href='https://purl.utwente.nl/essays/109175' target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
+			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={thesis} alt="">
+			<div class="flex flex-col justify-between p-4 leading-normal">
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">An overview of ICS vulnerabilities,
+					threats, and security measures</h5>
+				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work focuses on ICS security. In particular, three case studies based on data gathered from the ICSs of three power
+					plants are explored. The studies were produced during an internship collaboration with Atos.</p>
+				<div class="flex mt-4 md:mt-6">
+					<a href={thesis_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
 
 
 <div class="px-2 container my-6 mx-auto md:px-6" id="top">
@@ -476,7 +505,7 @@
 
 	<div class="flex flex-row flex-wrap gap-10 justify-items-center justify-center mt-4 mb-16">
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={phr} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -490,7 +519,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={path_oram} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -504,7 +533,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={det_enc} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -518,7 +547,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={prot} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -532,7 +561,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-left-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={chatcontrol} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -545,20 +574,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
-			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={thesis} alt="">
-			<div class="flex flex-col justify-between p-4 leading-normal">
-				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">An overview of ICS vulnerabilities,
-					threats, and security measures</h5>
-				<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">This work focuses on ICS security. In particular, three case studies based on data gathered from the ICSs of three power
-					plants are explored. The studies were produced during an internship collaboration with Atos.</p>
-				<div class="flex mt-4 md:mt-6">
-					<a href={thesis_pdf} target="_blank" class="transform transition hover:scale-105 hover:shadow-xl inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View PDF</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={crypto} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Esse3-Bootleg</h5>
@@ -570,7 +586,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={dhv} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A risk assessment on the dutch digital voting system.</h5>
@@ -582,7 +598,7 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-sm">
+		<div class="flex flex-col border-gray-900 items-center bg-[#292929] border rounded-lg shadow-xl md:flex-row md:max-w-screen-md">
 			<img class="object-cover object-top w-full rounded-t-lg h-96 md:h-full md:w-48 md:rounded-none md:rounded-s-lg" src={web_arch} alt="">
 			<div class="flex flex-col justify-between p-4 leading-normal">
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web Architecture Projects Collection</h5>
