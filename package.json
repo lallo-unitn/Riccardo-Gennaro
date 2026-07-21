@@ -40,5 +40,8 @@
 		"flowbite": "^2.3.0",
 		"flowbite-svelte-icons": "^1.6.1",
 		"svelte-media-queries": "^1.6.2"
+	},
+	"overrides": {
+		"cookie": "^0.7.0"
 	}
 }
