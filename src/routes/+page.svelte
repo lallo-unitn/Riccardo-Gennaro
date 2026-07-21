@@ -228,17 +228,6 @@
 						I enjoyed sharing my knowledge and passion for coding, and helping others achieve their academic goals.
 					</p>
 				</TimelineItem>
-				<TimelineItem title="Computer Science tutor" date="NEST, Sep 2021 - Present, Trento (TN)" >
-					<svelte:fragment slot="icon">
-					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
-						<CalendarWeekSolid class="w-4 h-4 text-hush-blue-500 dark:text-hush-blue-500" />
-					</span>
-					</svelte:fragment>
-					<p class="mb-4 text-base font-normal text-hush-white dark:text-hush-white">
-						As a computer science tutor at NEST Trento, I support students in learning C and Java programming, and algorithms design. <br>
-						I enjoy sharing my knowledge and passion for coding, and helping others achieve their academic goals.
-					</p>
-				</TimelineItem>
 				<TimelineItem title="Cyber Security Specialist Intern" date="Atos, Mar 2022 - Apr 2022, Milan (IT)" >
 					<svelte:fragment slot="icon">
 					<span class="flex absolute -start-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
