@@ -110,13 +110,10 @@
 
 </script>
 
-<body class="min-h-screen bg-hush-grey-600 font-redhat">
+<div class="min-h-screen bg-hush-grey-600 font-redhat">
 
 <Navbar class="bg-hush-grey-600 bg-opacity-25 dark:bg-hush-grey-600 ">
-	<NavBrand href="{base}/home">
-		<!-- Brand logo or text can be placed here -->
-		<img src="{signature}" alt="signature">
-	</NavBrand>
+
 	<div class="flex bg-opacity-25 md:order-2 bg-hush-grey-600">
 		<NavHamburger class="text-hush-white bg-hush-grey-600 px-0 pt-0 pb-0 focus:border-hush-grey-600 "
 									menuClass="bg-clip-border bg-hush-grey-600 px-0 focus:border-hush-grey-600" />
@@ -263,12 +260,12 @@
 
 		<div class="container mx-auto px-4">
 			<div class="my-6">
-				<Group date="Master's Degree">
+				<Group date="Master&#39;s Degree">
 					<GroupItem timelines={master} />
 				</Group>
 			</div>
 			<div class="my-6">
-				<Group date="Bachelor's Degree">
+				<Group date="Bachelor&#39;s Degree">
 					<GroupItem timelines={bachelor} />
 				</Group>
 			</div>
@@ -290,7 +287,6 @@
 						<div class="mb-12 lg:mb-0">
 							<div class="bg-opacity-30 text-hush-white block bg-hush-grey-700 rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-40 backdrop-blur-[30px]">
 								<h2 class="mb-2 pb-2 text-4xl text-hush-blue-500 font-bold">RICCARDO GENNARO</h2>
-								<p class="pb-2 text-xl font-bold text-hush-white dark:text-hush-white">
 								<p class="mb-6 pb-2 text-hush-white dark:text-hush-white">
 									MSc in Computer Science | Former KPMG IT Strategy Consultant
 								</p>
@@ -445,6 +441,7 @@
 			</div>
 
 		</div>
+	</div>
 </div>
 
 
@@ -687,7 +684,7 @@
 <footer class="bg-hush-blue-700 rounded-lg shadow m-4 mt-12">
 	<div class="max-w-screen-xl mx-auto p-4 flex flex-col md:flex-row md:items-center md:justify-between">
         <span class="text-sm text-white sm:text-center dark:text-hush-white">
-            © 2024 <a href="{base}/" class="hover:underline">Riccardo Gennaro</a>. All Rights Reserved.
+            © 2026 <a href="{base}/" class="hover:underline">Riccardo Gennaro</a>. All Rights Reserved.
         </span>
 		<ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
 			<li><a href="{base}/" class="hover:underline me-4 md:me-6">About</a></li>
@@ -698,7 +695,7 @@
 	</div>
 </footer>
 
-</body>
+</div>
 
 <style>
     body {
