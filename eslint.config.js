@@ -1,6 +1,3 @@
-// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
-import storybook from 'eslint-plugin-storybook';
-
 import prettier from 'eslint-config-prettier';
 import { includeIgnoreFile } from '@eslint/compat';
 import js from '@eslint/js';
@@ -24,9 +21,12 @@ export default ts.config(
 			globals: { ...globals.browser, ...globals.node }
 		},
 		rules: {
-			// typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
-			// see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
-			'no-undef': 'off'
+			// typescript-eslint recommends turning this off for TypeScript projects:
+			// https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+			'no-undef': 'off',
+			// One-page site: links are in-page #anchors, mailto:, external URLs or
+			// already-resolved asset URLs, none of which go through resolve().
+			'svelte/no-navigation-without-resolve': 'off'
 		}
 	},
 	{
@@ -39,6 +39,5 @@ export default ts.config(
 				svelteConfig
 			}
 		}
-	},
-	storybook.configs['flat/recommended']
+	}
 );

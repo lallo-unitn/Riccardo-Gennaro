@@ -1,7 +1,7 @@
-<script>
-  import "../app.css";
-	export const prerender = true;
+<script lang="ts">
+	import '../app.css';
 
+	let { children } = $props();
 </script>
 
-<slot />
+{@render children()}

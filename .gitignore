@@ -1,8 +1,16 @@
 .DS_Store
 node_modules
+
+# Build output: produced by the GitHub Actions workflow on every deploy, never committed.
+/docs
 /build
 /.svelte-kit
 /package
+
+# Editor settings
+/.idea
+/.vscode
+
 .env
 .env.*
 !.env.example

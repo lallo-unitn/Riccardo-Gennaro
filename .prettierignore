@@ -1,4 +1,13 @@
-# Ignore files for PNPM, NPM and YARN
-pnpm-lock.yaml
+# Generated / installed
+node_modules
+/docs
+/build
+/.svelte-kit
+/package
 package-lock.json
+pnpm-lock.yaml
 yarn.lock
+
+# Binary and third-party assets
+/static
+src/lib/assets

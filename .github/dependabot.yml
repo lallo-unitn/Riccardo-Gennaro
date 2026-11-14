@@ -1,0 +1,22 @@
+# Opens pull requests for dependency updates. Each PR runs the full lint/check/build
+# workflow, so a breaking update shows up as a failed check instead of a broken site.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    # Wait two weeks after a release before proposing it (supply-chain safety).
+    cooldown:
+      default-days: 14
+    groups:
+      dev-dependencies:
+        patterns: ['*']
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 14
