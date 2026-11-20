@@ -35,7 +35,6 @@ import matteo from '$lib/assets/img/matteo.webp';
 import riccardo from '$lib/assets/img/riccardo.webp';
 import jan from '$lib/assets/img/jan.webp';
 
-import gliLogo from '$lib/assets/logos/gli.webp';
 import kpmgLogo from '$lib/assets/logos/kpmg.webp';
 import fbkLogo from '$lib/assets/logos/fbk.webp';
 
@@ -99,6 +98,8 @@ export interface Job {
 	description: string[];
 	/** Company logo (import it from $lib/assets/logos/). Shown in the story; optional. */
 	logo?: string;
+	/** Set when the logo file has its own solid background, so it is shown as is instead of on a white card. */
+	logoHasBackground?: boolean;
 }
 
 export interface School {
@@ -205,7 +206,6 @@ export const experience: Job[] = [
 	{
 		title: 'Test Engineer',
 		organization: 'Gaming Laboratories International, LLC',
-		logo: gliLogo,
 		start: 'Nov 2026',
 		end: 'Present',
 		location: 'Italy',
@@ -227,6 +227,7 @@ export const experience: Job[] = [
 		title: 'Security Researcher Intern',
 		organization: 'Fondazione Bruno Kessler',
 		logo: fbkLogo,
+		logoHasBackground: true,
 		start: 'Feb 2025',
 		end: 'Dec 2025',
 		location: 'Trento (Italy)',
@@ -578,8 +579,8 @@ export const photos: Photo[] = [
 		full: stallmanFull,
 		width: 640,
 		height: 640,
-		alt: 'Posing with a guest at a conference',
-		caption: 'At a conference'
+		alt: 'Photo-bombing a photo with Richard Stallman',
+		caption: 'Photo-bombing R. Stallman'
 	},
 	{
 		id: 'horsing',
@@ -659,8 +660,8 @@ export const photos: Photo[] = [
 		full: eventFull,
 		width: 800,
 		height: 600,
-		alt: 'Group photo with a guest at an event',
-		caption: 'At an event'
+		alt: 'Group photo with Andrew S. Tanenbaum',
+		caption: 'With our rockstars A.S. Tanenbaum'
 	},
 	{
 		id: 'ride',

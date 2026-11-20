@@ -75,7 +75,7 @@
 		{/each}
 	</div>
 {:else if media.kind === 'logos'}
-	<div class="flex items-center {stage ? '-space-x-6' : '-space-x-3'}">
+	<div class="flex items-center {stage ? '-space-x-6' : 'gap-3'}">
 		{#each media.logos as logo (logo.src)}
 			<img
 				src={logo.src}
@@ -90,6 +90,16 @@
 			/>
 		{/each}
 	</div>
+{:else if media.kind === 'brand' && media.bare}
+	<img
+		src={media.src}
+		alt={stage ? '' : media.alt}
+		loading="lazy"
+		decoding="async"
+		class="rounded-2xl object-contain shadow-2xl shadow-black/50 {stage
+			? 'h-48 w-48 lg:h-56 lg:w-56'
+			: 'h-24 w-24'}"
+	/>
 {:else if media.kind === 'brand'}
 	<div
 		class="flex items-center justify-center rounded-2xl bg-white shadow-2xl shadow-black/50 {stage

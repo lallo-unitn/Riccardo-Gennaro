@@ -27,7 +27,7 @@ export type Media =
 	| { kind: 'photo'; photo: Photo }
 	| { kind: 'pile'; photos: Photo[] }
 	| { kind: 'logos'; logos: { src: string; alt: string }[] }
-	| { kind: 'brand'; src: string; alt: string }
+	| { kind: 'brand'; src: string; alt: string; bare?: boolean }
 	| { kind: 'word'; text: string };
 
 export interface Step {
@@ -92,7 +92,9 @@ const fromJob = (j: Job, fallback?: Media): Step => ({
 	title: j.title,
 	subtitle: `${j.organization}, ${j.location}`,
 	body: j.description,
-	media: j.logo ? { kind: 'brand', src: j.logo, alt: `${j.organization} logo` } : fallback
+	media: j.logo
+		? { kind: 'brand', src: j.logo, alt: `${j.organization} logo`, bare: j.logoHasBackground }
+		: fallback
 });
 
 const fromDegree = (d: Degree): Step => ({
