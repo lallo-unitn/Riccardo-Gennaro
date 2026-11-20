@@ -35,6 +35,10 @@ import matteo from '$lib/assets/img/matteo.webp';
 import riccardo from '$lib/assets/img/riccardo.webp';
 import jan from '$lib/assets/img/jan.webp';
 
+import gliLogo from '$lib/assets/logos/gli.webp';
+import kpmgLogo from '$lib/assets/logos/kpmg.webp';
+import fbkLogo from '$lib/assets/logos/fbk.webp';
+
 import defenceImg from '$lib/assets/gallery/defence.webp';
 import defenceFull from '$lib/assets/gallery/defence-full.webp';
 import peopleChoiceImg from '$lib/assets/gallery/people_choice.webp';
@@ -71,6 +75,10 @@ import bikeImg from '$lib/assets/gallery/bike.webp';
 import bikeFull from '$lib/assets/gallery/bike-full.webp';
 import cockpitImg from '$lib/assets/gallery/cockpit.webp';
 import cockpitFull from '$lib/assets/gallery/cockpit-full.webp';
+import twenteLettersImg from '$lib/assets/gallery/twente-letters.webp';
+import twenteLettersFull from '$lib/assets/gallery/twente-letters-full.webp';
+import diplomaImg from '$lib/assets/gallery/diploma.webp';
+import diplomaFull from '$lib/assets/gallery/diploma-full.webp';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -197,6 +205,7 @@ export const experience: Job[] = [
 	{
 		title: 'Test Engineer',
 		organization: 'Gaming Laboratories International, LLC',
+		logo: gliLogo,
 		start: 'Nov 2026',
 		end: 'Present',
 		location: 'Italy',
@@ -205,6 +214,7 @@ export const experience: Job[] = [
 	{
 		title: 'IT Strategy Consultant',
 		organization: 'KPMG Nolan Norton',
+		logo: kpmgLogo,
 		start: 'Feb 2026',
 		end: 'Jul 2026',
 		location: 'Verona (Italy)',
@@ -216,6 +226,7 @@ export const experience: Job[] = [
 	{
 		title: 'Security Researcher Intern',
 		organization: 'Fondazione Bruno Kessler',
+		logo: fbkLogo,
 		start: 'Feb 2025',
 		end: 'Dec 2025',
 		location: 'Trento (Italy)',
@@ -594,8 +605,8 @@ export const photos: Photo[] = [
 		full: gradLunchFull,
 		width: 600,
 		height: 800,
-		alt: 'Celebration lunch, the graduate wearing a laurel wreath',
-		caption: 'Graduation lunch'
+		alt: 'Celebration lunch with friends, the graduate wearing a laurel wreath',
+		caption: 'Master’s graduation party'
 	},
 	{
 		id: 'western-party',
@@ -677,5 +688,23 @@ export const photos: Photo[] = [
 		height: 800,
 		alt: 'The motorcycle’s cockpit in front of a tunnel entrance',
 		caption: 'About to enter the tunnel'
+	},
+	{
+		id: 'twente-letters',
+		src: twenteLettersImg,
+		full: twenteLettersFull,
+		width: 800,
+		height: 600,
+		alt: 'Wearing a laurel wreath and holding the diploma in front of the giant University of Twente letters',
+		caption: 'Graduation day, University of Twente'
+	},
+	{
+		id: 'diploma',
+		src: diplomaImg,
+		full: diplomaFull,
+		width: 800,
+		height: 600,
+		alt: 'Signing the Master of Science diploma at a desk',
+		caption: 'Signing the diploma'
 	}
 ];

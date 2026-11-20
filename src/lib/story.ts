@@ -25,6 +25,7 @@ import {
 export type Media =
 	| { kind: 'doc'; image: string; alt: string; position?: string }
 	| { kind: 'photo'; photo: Photo }
+	| { kind: 'pile'; photos: Photo[] }
 	| { kind: 'logos'; logos: { src: string; alt: string }[] }
 	| { kind: 'brand'; src: string; alt: string }
 	| { kind: 'word'; text: string };
@@ -141,21 +142,9 @@ export const chapters: Chapter[] = [
 			fromWork(thesis('An overview of ICS'), 'Dec 2022'),
 			{
 				when: 'Dec 2022',
-				title: photo('defence').caption,
+				title: 'Thesis defence and graduation',
 				body: [],
-				media: { kind: 'photo', photo: photo('defence') }
-			},
-			{
-				when: 'Dec 2022',
-				title: photo('bachelor-graduation').caption,
-				body: [],
-				media: { kind: 'photo', photo: photo('bachelor-graduation') }
-			},
-			{
-				when: 'Dec 2022',
-				title: photo('graduation-lunch').caption,
-				body: [],
-				media: { kind: 'photo', photo: photo('graduation-lunch') }
+				media: { kind: 'pile', photos: [photo('defence'), photo('bachelor-graduation')] }
 			}
 		]
 	},
@@ -174,7 +163,16 @@ export const chapters: Chapter[] = [
 			fromWork(project('Balancing Child Safety')),
 			fromWork(project('Information Leakage')),
 			fromWork(project('Simulating Path ORAM')),
-			fromWork(project('Enforcing Cryptographic'))
+			fromWork(project('Enforcing Cryptographic')),
+			{
+				when: 'Dec 2025',
+				title: 'Graduation in Enschede',
+				body: [],
+				media: {
+					kind: 'pile',
+					photos: [photo('diploma'), photo('graduation-lunch'), photo('twente-letters')]
+				}
+			}
 		]
 	},
 	{

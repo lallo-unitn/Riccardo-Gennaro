@@ -22,6 +22,19 @@
 			{now.title}
 		</h2>
 		<p class="mt-4 text-xl text-hush-grey-100 md:text-2xl">{now.organization}, {now.location}</p>
+		{#if now.logo}
+			<div
+				class="mt-8 flex h-24 w-56 items-center justify-center rounded-2xl bg-white p-4 shadow-2xl shadow-black/50"
+			>
+				<img
+					src={now.logo}
+					alt="{now.organization} logo"
+					loading="lazy"
+					decoding="async"
+					class="max-h-full max-w-full object-contain"
+				/>
+			</div>
+		{/if}
 		<ul class="mt-10 flex flex-col gap-4 text-lg md:flex-row md:gap-10">
 			{#each contacts as c (c.href)}
 				<li class="flex items-center gap-3">
