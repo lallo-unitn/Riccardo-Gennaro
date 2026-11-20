@@ -17,7 +17,10 @@ import {
 	type Publication,
 	type Link
 } from '$lib/content';
+import { dev } from '$app/environment';
 import { filmStats } from '$lib/films';
+import { formatDate } from '$lib/dates';
+import { music, ranges, topGenres, type MusicTrack } from '$lib/music';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -28,7 +31,15 @@ export type Media =
 	| { kind: 'photo'; photo: Photo }
 	| { kind: 'logos'; logos: { src: string; alt: string }[] }
 	| { kind: 'brand'; src: string; alt: string; bare?: boolean }
-	| { kind: 'word'; text: string };
+	| { kind: 'word'; text: string }
+	/** A record sliding out of its sleeve: an album cover with a disc whose label is a picture. */
+	| {
+			kind: 'record';
+			sleeve: string | null;
+			sleeveAlt: string;
+			label: string | null;
+			labelAlt: string;
+	  };
 
 export interface Step {
 	when: string;
@@ -39,6 +50,13 @@ export interface Step {
 	links?: Link[];
 	media?: Media;
 	publication?: Publication;
+	/** Numbered lists, e.g. top artists and top tracks. */
+	ranked?: RankedList[];
+}
+
+export interface RankedList {
+	heading: string;
+	items: { name: string; detail?: string; url: string }[];
 }
 
 export interface Chapter {
@@ -128,6 +146,60 @@ const fromWork = (w: Work, when = yearOf(w), media: Media = docMedia(w)): Step =
 
 const paper = publications[0];
 const offSound = project('OFF-SOUND');
+
+const trackItems = (tracks: MusicTrack[]) =>
+	tracks.map((t) => ({ name: t.name, detail: t.artists.join(', '), url: t.url }));
+
+/** Spotify listening stats: one step per time range, then the last tracks played. */
+const musicChapter: Chapter = {
+	id: 'music',
+	short: 'Music',
+	year: music.updated.slice(0, 4),
+	title: 'On repeat',
+	intro: music.sample
+		? 'Sample data: run scripts/spotify.js (see scripts/spotify-auth.js) to show your own. This chapter stays off the live site until then.'
+		: 'What I listen to, straight from Spotify and refreshed every day.',
+	scene: 'steps',
+	steps: [
+		...ranges.map(({ key, when, title }): Step => {
+			const artists = music.topArtists[key].slice(0, 5);
+			const tracks = music.topTracks[key].slice(0, 5);
+			return {
+				when,
+				title,
+				body: [],
+				tags: topGenres(music.topArtists[key]),
+				ranked: [
+					{
+						heading: 'Artists',
+						items: artists.map((a) => ({ name: a.name, url: a.url }))
+					},
+					{ heading: 'Tracks', items: trackItems(tracks) }
+				],
+				media: {
+					kind: 'record',
+					sleeve: tracks[0]?.image ?? null,
+					sleeveAlt: tracks[0] ? `Cover of ${tracks[0].name}` : '',
+					label: artists[0]?.image ?? null,
+					labelAlt: artists[0]?.name ?? ''
+				}
+			};
+		}),
+		{
+			when: `Updated ${formatDate(music.updated)}`,
+			title: 'Last played',
+			body: ['Data from Spotify.'],
+			ranked: [{ heading: 'Tracks', items: trackItems(music.recent) }],
+			media: {
+				kind: 'record',
+				sleeve: music.recent[0]?.image ?? null,
+				sleeveAlt: music.recent[0] ? `Cover of ${music.recent[0].name}` : '',
+				label: music.recent[0]?.image ?? null,
+				labelAlt: ''
+			}
+		} satisfies Step
+	].filter((step) => step.ranked?.some((list) => list.items.length))
+};
 
 export const chapters: Chapter[] = [
 	{
@@ -244,6 +316,8 @@ export const chapters: Chapter[] = [
 		scene: 'films',
 		steps: []
 	},
+	// Sample data is for previewing in `npm run dev`; the live site waits for real data.
+	...(music.sample && !dev ? [] : [musicChapter]),
 	{
 		id: 'people',
 		short: 'People',

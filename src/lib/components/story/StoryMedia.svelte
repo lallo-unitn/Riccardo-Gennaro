@@ -76,6 +76,38 @@
 			class="max-h-full max-w-full object-contain"
 		/>
 	</div>
+{:else if media.kind === 'record'}
+	<!-- An album sleeve with the record half pulled out to the right; the label spins. -->
+	<div class="relative aspect-square -translate-x-[26%] {stage ? 'w-[min(24rem,60%)]' : 'w-44'}">
+		<div
+			class="vinyl absolute inset-[4%] translate-x-[58%] rounded-full shadow-2xl shadow-black/60 ring-1 ring-white/10"
+		>
+			<div class="spin absolute inset-[33%] overflow-hidden rounded-full bg-hush-blue-500">
+				{#if media.label}
+					<img
+						src={media.label}
+						alt={stage ? '' : media.labelAlt}
+						loading="lazy"
+						decoding="async"
+						class="h-full w-full object-cover"
+					/>
+				{/if}
+			</div>
+		</div>
+		<div
+			class="relative h-full w-full overflow-hidden rounded-sm bg-gradient-to-br from-hush-blue-500 to-hush-blue-900 shadow-2xl shadow-black/60"
+		>
+			{#if media.sleeve}
+				<img
+					src={media.sleeve}
+					alt={stage ? '' : media.sleeveAlt}
+					loading="lazy"
+					decoding="async"
+					class="h-full w-full object-cover"
+				/>
+			{/if}
+		</div>
+	</div>
 {:else if media.kind === 'word'}
 	<span
 		aria-hidden="true"
@@ -84,3 +116,30 @@
 			: 'text-6xl'}">{media.text}</span
 	>
 {/if}
+
+<style>
+	/* Grooves, then a thin shine. */
+	.vinyl {
+		background:
+			conic-gradient(
+				from 30deg,
+				transparent 0 10%,
+				rgb(255 255 255 / 0.08) 14%,
+				transparent 20% 60%,
+				rgb(255 255 255 / 0.08) 64%,
+				transparent 70%
+			),
+			radial-gradient(circle, transparent 32%, #0b0b0b 32.5%, #0b0b0b 35%, transparent 35.5%),
+			repeating-radial-gradient(circle, #0e0e0e 0 1.5px, #2e2e2e 1.5px 3px), #141414;
+	}
+	@media (prefers-reduced-motion: no-preference) {
+		.spin {
+			animation: spin 6s linear infinite;
+		}
+	}
+	@keyframes spin {
+		to {
+			rotate: 360deg;
+		}
+	}
+</style>

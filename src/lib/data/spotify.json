@@ -1,0 +1,412 @@
+{
+	"sample": true,
+	"updated": "2026-11-20",
+	"topArtists": {
+		"short": [
+			{
+				"name": "Sample artist 1",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 2",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 3",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 4",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 5",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 6",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 7",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 8",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 9",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 10",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			}
+		],
+		"medium": [
+			{
+				"name": "Sample artist 4",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 5",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 6",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 7",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 8",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 9",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 10",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 11",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 12",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 13",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			}
+		],
+		"long": [
+			{
+				"name": "Sample artist 7",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 8",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 9",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 10",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 11",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 12",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 13",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 14",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 15",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			},
+			{
+				"name": "Sample artist 16",
+				"url": "https://open.spotify.com/",
+				"image": null,
+				"genres": []
+			}
+		]
+	},
+	"topTracks": {
+		"short": [
+			{
+				"name": "Sample track 1",
+				"artists": ["Sample artist 1"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 2",
+				"artists": ["Sample artist 2"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 3",
+				"artists": ["Sample artist 3"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 4",
+				"artists": ["Sample artist 4"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 5",
+				"artists": ["Sample artist 5"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 6",
+				"artists": ["Sample artist 6"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 7",
+				"artists": ["Sample artist 7"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 8",
+				"artists": ["Sample artist 1"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 9",
+				"artists": ["Sample artist 2"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 10",
+				"artists": ["Sample artist 3"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			}
+		],
+		"medium": [
+			{
+				"name": "Sample track 5",
+				"artists": ["Sample artist 5"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 6",
+				"artists": ["Sample artist 6"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 7",
+				"artists": ["Sample artist 7"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 8",
+				"artists": ["Sample artist 1"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 9",
+				"artists": ["Sample artist 2"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 10",
+				"artists": ["Sample artist 3"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 11",
+				"artists": ["Sample artist 4"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 12",
+				"artists": ["Sample artist 5"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 13",
+				"artists": ["Sample artist 6"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 14",
+				"artists": ["Sample artist 7"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			}
+		],
+		"long": [
+			{
+				"name": "Sample track 9",
+				"artists": ["Sample artist 2"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 10",
+				"artists": ["Sample artist 3"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 11",
+				"artists": ["Sample artist 4"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 12",
+				"artists": ["Sample artist 5"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 13",
+				"artists": ["Sample artist 6"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 14",
+				"artists": ["Sample artist 7"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 15",
+				"artists": ["Sample artist 1"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 16",
+				"artists": ["Sample artist 2"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 17",
+				"artists": ["Sample artist 3"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			},
+			{
+				"name": "Sample track 18",
+				"artists": ["Sample artist 4"],
+				"url": "https://open.spotify.com/",
+				"image": null
+			}
+		]
+	},
+	"recent": [
+		{
+			"name": "Sample track 21",
+			"artists": ["Sample artist 7"],
+			"url": "https://open.spotify.com/",
+			"image": null
+		},
+		{
+			"name": "Sample track 22",
+			"artists": ["Sample artist 1"],
+			"url": "https://open.spotify.com/",
+			"image": null
+		},
+		{
+			"name": "Sample track 23",
+			"artists": ["Sample artist 2"],
+			"url": "https://open.spotify.com/",
+			"image": null
+		},
+		{
+			"name": "Sample track 24",
+			"artists": ["Sample artist 3"],
+			"url": "https://open.spotify.com/",
+			"image": null
+		},
+		{
+			"name": "Sample track 25",
+			"artists": ["Sample artist 4"],
+			"url": "https://open.spotify.com/",
+			"image": null
+		}
+	]
+}

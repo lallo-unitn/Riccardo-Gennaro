@@ -6,6 +6,11 @@ on:
   # Pull requests run the same checks and build, but do not deploy.
   pull_request:
   workflow_dispatch:
+  # Rebuild once a day so the Music chapter shows fresh Spotify stats (05:23 UTC).
+  # GitHub runs schedules from the default branch only, and pauses them after
+  # 60 days without activity in the repository.
+  schedule:
+    - cron: '23 5 * * *'
 
 permissions:
   contents: read
@@ -38,6 +43,16 @@ jobs:
 
       - name: Type-check
         run: npm run check
+
+      # Writes src/lib/data/spotify.json. Skipped without the secrets (forks, pull
+      # requests); never fails the build, it keeps the previous data instead.
+      - name: Fetch Spotify stats
+        if: github.event_name != 'pull_request'
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: node scripts/spotify.js
 
       - name: Build
         env:

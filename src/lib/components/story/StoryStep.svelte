@@ -28,6 +28,39 @@
 	{#each step.body as paragraph, i (i)}
 		<p class="mt-3 leading-relaxed text-gray-300">{paragraph}</p>
 	{/each}
+	{#if step.ranked?.length}
+		<div class="mt-5 grid gap-6 sm:grid-cols-2">
+			{#each step.ranked as list (list.heading)}
+				<div>
+					<h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-hush-blue-300">
+						{list.heading}
+					</h4>
+					<ol class="mt-2 space-y-2">
+						{#each list.items as item, i (i)}
+							<li class="flex gap-3">
+								<span
+									class="w-5 shrink-0 text-right font-bold text-hush-grey-100"
+									aria-hidden="true">{i + 1}</span
+								>
+								<span class="min-w-0">
+									<a
+										href={item.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block truncate font-semibold text-white underline-offset-4 hover:underline"
+										>{item.name}</a
+									>
+									{#if item.detail}
+										<span class="block truncate text-sm text-hush-grey-100">{item.detail}</span>
+									{/if}
+								</span>
+							</li>
+						{/each}
+					</ol>
+				</div>
+			{/each}
+		</div>
+	{/if}
 	{#if step.tags?.length}
 		<ul class="mt-4 flex flex-wrap gap-2">
 			{#each step.tags as tag (tag)}
