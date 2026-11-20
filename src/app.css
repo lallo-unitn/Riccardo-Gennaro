@@ -29,3 +29,54 @@ body {
 	font-display: swap;
 	src: url('./lib/assets/fonts/RedHatDisplay-Italic.woff2') format('woff2');
 }
+
+/* ---------------------------------------------------------------------------
+   Scrollytelling
+   Content is always rendered in its final state; the `js` class (set by a tiny
+   script in app.html) is what allows elements to start hidden and animate in.
+   Without JavaScript nothing is hidden. With reduced motion nothing moves.
+   --------------------------------------------------------------------------- */
+
+.js .reveal {
+	opacity: 0;
+	transform: translateY(2rem);
+	transition:
+		opacity 0.7s ease,
+		transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.js .reveal.is-in {
+	opacity: 1;
+	transform: none;
+}
+
+/* Pinned scenes read --p (0 to 1, set by scrollProgress). Default: finished. */
+.scene {
+	--p: 1;
+}
+/* Scenes whose resting state is the start (the opening scene). */
+.scene.scene-start {
+	--p: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	.scene {
+		--p: 1 !important;
+	}
+	.scene.scene-start {
+		--p: 0 !important;
+	}
+	.js .reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+}

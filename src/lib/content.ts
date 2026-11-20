@@ -35,6 +35,25 @@ import matteo from '$lib/assets/img/matteo.webp';
 import riccardo from '$lib/assets/img/riccardo.webp';
 import jan from '$lib/assets/img/jan.webp';
 
+import defenceImg from '$lib/assets/gallery/defence.webp';
+import defenceFull from '$lib/assets/gallery/defence-full.webp';
+import degreeImg from '$lib/assets/gallery/degree.webp';
+import degreeFull from '$lib/assets/gallery/degree-full.webp';
+import peopleChoiceImg from '$lib/assets/gallery/people_choice.webp';
+import peopleChoiceFull from '$lib/assets/gallery/people_choice-full.webp';
+import printImg from '$lib/assets/gallery/print.webp';
+import printFull from '$lib/assets/gallery/print-full.webp';
+import testingImg from '$lib/assets/gallery/testing.webp';
+import testingFull from '$lib/assets/gallery/testing-full.webp';
+import maskImg from '$lib/assets/gallery/mask.webp';
+import maskFull from '$lib/assets/gallery/mask-full.webp';
+import tannImg from '$lib/assets/gallery/tann.webp';
+import tannFull from '$lib/assets/gallery/tann-full.webp';
+import stallmanImg from '$lib/assets/gallery/stallman.webp';
+import stallmanFull from '$lib/assets/gallery/stallman-full.webp';
+import horsingImg from '$lib/assets/gallery/horsing_around.webp';
+import horsingFull from '$lib/assets/gallery/horsing_around-full.webp';
+
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
@@ -76,8 +95,11 @@ export interface Work {
 	title: string;
 	image: string;
 	imageAlt: string;
-	/** Which part of the thumbnail stays visible when it is cropped. */
-	imagePosition?: 'top' | 'left-top';
+	/**
+	 * Previews are cropped to an A4 shape. This picks which part stays visible, as a CSS
+	 * object-position value (default 'top'). Only needed for images that are not A4 pages.
+	 */
+	imagePosition?: string;
 	tags?: string[];
 	description?: string;
 	links: Link[];
@@ -90,6 +112,19 @@ export interface Publication extends Work {
 	bibtexKey: string;
 	/** Fill in once IEEE assigns it: adds a DOI button and a doi field to the BibTeX. */
 	doi?: string;
+}
+
+export interface Photo {
+	/** Stable name used by the story to place the photo (see src/lib/story.ts). */
+	id: string;
+	/** Display-sized image (longest side 800 px). */
+	src: string;
+	/** Full-screen image for the lightbox (longest side 1600 px). */
+	full: string;
+	width: number;
+	height: number;
+	alt: string;
+	caption: string;
 }
 
 export interface Buddy {
@@ -133,14 +168,6 @@ export const profile = {
 	quote: 'It doesn’t matter if it is ugly as long as it is free*.',
 	quoteNote: '*free as in freedom'
 };
-
-export const nav: Link[] = [
-	{ label: 'Home', href: '#top' },
-	{ label: 'Experience', href: '#exp' },
-	{ label: 'Education', href: '#edu' },
-	{ label: 'Publications', href: '#publications' },
-	{ label: 'Projects', href: '#proj' }
-];
 
 // ---------------------------------------------------------------------------
 // Experience (newest first)
@@ -346,7 +373,7 @@ export const projects: Work[] = [
 			'OFF-SOUND is a start-up project that started in February 2024 in the Business Development Laboratory of the University of Trento. This project aims at developing a solution that enables people to take their phone calls anywhere without having to worry about eavesdroppers.',
 		image: offSoundImg,
 		imageAlt: 'OFF-SOUND hardware prototype on a desk',
-		imagePosition: 'left-top',
+		imagePosition: '40% center', // keep the prototype in frame
 		links: [
 			{ label: 'View PDF', href: offSoundPdf },
 			{ label: 'GitHub', href: 'https://github.com/orgs/HUSH-MASK/repositories' },
@@ -360,7 +387,6 @@ export const projects: Work[] = [
 			'This work presents a cryptographically enforced access control system for Personal Health Records (PHRs) using Multi-Authority Ciphertext-Policy Attribute-Based Encryption (MA-CP-ABE), ensuring secure data sharing and integrity among diverse users.',
 		image: phrImg,
 		imageAlt: 'First page of the PHR access control report',
-		imagePosition: 'left-top',
 		links: [
 			{ label: 'View PDF', href: phrPdf },
 			{ label: 'GitHub', href: 'https://github.com/lallo-unitn/phr_access_control' }
@@ -373,7 +399,6 @@ export const projects: Work[] = [
 			'This work analyzes information leakage in SSE and deterministic encryption, demonstrating vulnerabilities and proposing secure indexing as a mitigation.',
 		image: detEncImg,
 		imageAlt: 'First page of the deterministic encryption report',
-		imagePosition: 'left-top',
 		// The GitHub repo (lallo-unitn/inference_on_det_encryption) is private or deleted.
 		links: [{ label: 'View PDF', href: detEncPdf }]
 	},
@@ -384,7 +409,6 @@ export const projects: Work[] = [
 			'This work analyzes Path ORAM’s performance, simulating read/write operations, and evaluating overflow probabilities for varying bucket sizes.',
 		image: pathOramImg,
 		imageAlt: 'First page of the Path ORAM report',
-		imagePosition: 'left-top',
 		// The GitHub repo (lallo-unitn/path-oblivious-ram-simulation) is private or deleted.
 		links: [{ label: 'View PDF', href: pathOramPdf }]
 	},
@@ -416,7 +440,6 @@ export const projects: Work[] = [
 			'This work explores the recent legislative proposal aimed at combating the proliferation of Child Sexual Abuse Material (CSAM) and online child sexual solicitation.',
 		image: chatcontrolImg,
 		imageAlt: 'First page of the Chat Control essay',
-		imagePosition: 'left-top',
 		links: [{ label: 'View PDF', href: chatcontrolPdf }]
 	},
 	{
@@ -464,5 +487,94 @@ export const buddies: Buddy[] = [
 		tagline: 'Has a problem with kernels',
 		photo: jan,
 		href: 'https://jantomassi.github.io/'
+	}
+];
+
+// ---------------------------------------------------------------------------
+// Personal photos
+// ---------------------------------------------------------------------------
+
+// PLACEHOLDER captions and alt texts, guessed from the old file names. Rewrite them.
+export const photos: Photo[] = [
+	{
+		id: 'defence',
+		src: defenceImg,
+		full: defenceFull,
+		width: 800,
+		height: 600,
+		alt: 'Presenting slides on ICS security in a lecture room',
+		caption: 'Bachelor’s thesis defence'
+	},
+	{
+		id: 'degree',
+		src: degreeImg,
+		full: degreeFull,
+		width: 800,
+		height: 534,
+		alt: 'Group photo of friends indoors',
+		caption: 'Graduation day'
+	},
+	{
+		id: 'people-choice',
+		src: peopleChoiceImg,
+		full: peopleChoiceFull,
+		width: 800,
+		height: 450,
+		alt: 'The OFF-SOUND team on stage holding a certificate',
+		caption: 'OFF-SOUND, People’s Choice'
+	},
+	{
+		id: 'print',
+		src: printImg,
+		full: printFull,
+		width: 600,
+		height: 800,
+		alt: 'A 3D printer printing a prototype part',
+		caption: 'Printing a prototype'
+	},
+	{
+		id: 'testing',
+		src: testingImg,
+		full: testingFull,
+		width: 800,
+		height: 537,
+		alt: 'Testing a prototype with a sound level meter',
+		caption: 'Testing OFF-SOUND'
+	},
+	{
+		id: 'mask',
+		src: maskImg,
+		full: maskFull,
+		width: 454,
+		height: 800,
+		alt: 'Someone trying on the prototype at an event',
+		caption: 'OFF-SOUND demo'
+	},
+	{
+		id: 'tann',
+		src: tannImg,
+		full: tannFull,
+		width: 800,
+		height: 600,
+		alt: 'Group photo at an event',
+		caption: 'With friends'
+	},
+	{
+		id: 'stallman',
+		src: stallmanImg,
+		full: stallmanFull,
+		width: 640,
+		height: 640,
+		alt: 'Posing with a guest at a conference',
+		caption: 'At a conference'
+	},
+	{
+		id: 'horsing',
+		src: horsingImg,
+		full: horsingFull,
+		width: 640,
+		height: 640,
+		alt: 'Wearing a horse costume',
+		caption: 'Horsing around'
 	}
 ];
