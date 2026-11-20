@@ -14,29 +14,6 @@
 	}: { media: Media; size: 'stage' | 'inline'; onopen?: (photoId: string) => void } = $props();
 
 	const stage = $derived(size === 'stage');
-
-	// Where each photo of a pile lands (relative to the pile's frame) and its tilt.
-	// Two photos sit in a wider, shorter frame than three.
-	const pileLayouts = {
-		two: {
-			frame: 'aspect-[4/3]',
-			spots: [
-				{ x: '0%', y: '24%', rot: '-6deg' },
-				{ x: '40%', y: '0%', rot: '5deg' }
-			]
-		},
-		three: {
-			frame: 'aspect-square',
-			spots: [
-				{ x: '0%', y: '6%', rot: '-6deg' },
-				{ x: '40%', y: '0%', rot: '5deg' },
-				{ x: '18%', y: '34%', rot: '-2deg' }
-			]
-		}
-	};
-	const pile = $derived(
-		media.kind === 'pile' && media.photos.length <= 2 ? pileLayouts.two : pileLayouts.three
-	);
 </script>
 
 {#if media.kind === 'doc'}
@@ -59,21 +36,6 @@
 		{onopen}
 		class={stage ? 'w-[min(30rem,80%)] -rotate-2' : 'w-full max-w-sm -rotate-1'}
 	/>
-{:else if media.kind === 'pile'}
-	<!-- Several photos dropped on top of each other; the last one lies on top. -->
-	<div class="relative {pile.frame} {stage ? 'w-[min(34rem,90%)]' : 'w-full max-w-sm'}">
-		{#each media.photos as photo, i (photo.id)}
-			{@const spot = pile.spots[i % pile.spots.length]}
-			<div
-				class="absolute w-[60%]"
-				style:left={spot.x}
-				style:top={spot.y}
-				style:transform="rotate({spot.rot})"
-			>
-				<Polaroid {photo} decorative={stage} {onopen} />
-			</div>
-		{/each}
-	</div>
 {:else if media.kind === 'logos'}
 	<div class="flex items-center {stage ? '-space-x-6' : 'gap-3'}">
 		{#each media.logos as logo (logo.src)}

@@ -37,6 +37,8 @@ import jan from '$lib/assets/img/jan.webp';
 
 import kpmgLogo from '$lib/assets/logos/kpmg.webp';
 import fbkLogo from '$lib/assets/logos/fbk.webp';
+import nestLogo from '$lib/assets/logos/nest.webp';
+import atosLogo from '$lib/assets/logos/atos.webp';
 
 import defenceImg from '$lib/assets/gallery/defence.webp';
 import defenceFull from '$lib/assets/gallery/defence-full.webp';
@@ -238,6 +240,8 @@ export const experience: Job[] = [
 	{
 		title: 'Computer Science Tutor',
 		organization: 'NEST',
+		logo: nestLogo,
+		logoHasBackground: true,
 		start: 'Sep 2021',
 		end: 'Aug 2024',
 		location: 'Trento (Italy)',
@@ -246,6 +250,8 @@ export const experience: Job[] = [
 	{
 		title: 'Cyber Security Specialist Intern',
 		organization: 'Atos',
+		logo: atosLogo,
+		logoHasBackground: true,
 		start: 'Mar 2022',
 		end: 'Apr 2022',
 		location: 'Milan (Italy)',

@@ -25,7 +25,6 @@ import {
 export type Media =
 	| { kind: 'doc'; image: string; alt: string; position?: string }
 	| { kind: 'photo'; photo: Photo }
-	| { kind: 'pile'; photos: Photo[] }
 	| { kind: 'logos'; logos: { src: string; alt: string }[] }
 	| { kind: 'brand'; src: string; alt: string; bare?: boolean }
 	| { kind: 'word'; text: string };
@@ -54,6 +53,8 @@ export interface Chapter {
 	steps: Step[];
 	/** Photos for the 'stack' and 'people' scenes. */
 	photos?: Photo[];
+	/** A 'steps' chapter can end with a photo-pile scene, like the 'stack' chapters. */
+	closing?: { step: Step; photos: Photo[] };
 }
 
 // ---------------------------------------------------------------------------
@@ -141,14 +142,12 @@ export const chapters: Chapter[] = [
 			fromJob(job('NEST'), { kind: 'word', text: 'C · Java' }),
 			fromJob(job('Atos'), { kind: 'word', text: 'ICS' }),
 			fromWork(project('Web Architecture')),
-			fromWork(thesis('An overview of ICS'), 'Dec 2022'),
-			{
-				when: 'Dec 2022',
-				title: 'Thesis defence and graduation',
-				body: [],
-				media: { kind: 'pile', photos: [photo('defence'), photo('bachelor-graduation')] }
-			}
-		]
+			fromWork(thesis('An overview of ICS'), 'Dec 2022')
+		],
+		closing: {
+			step: { when: 'Dec 2022', title: 'Thesis defence and graduation', body: [] },
+			photos: [photo('defence'), photo('bachelor-graduation')]
+		}
 	},
 	{
 		id: 'master',
@@ -165,17 +164,12 @@ export const chapters: Chapter[] = [
 			fromWork(project('Balancing Child Safety')),
 			fromWork(project('Information Leakage')),
 			fromWork(project('Simulating Path ORAM')),
-			fromWork(project('Enforcing Cryptographic')),
-			{
-				when: 'Dec 2025',
-				title: 'Graduation in Enschede',
-				body: [],
-				media: {
-					kind: 'pile',
-					photos: [photo('diploma'), photo('graduation-lunch'), photo('twente-letters')]
-				}
-			}
-		]
+			fromWork(project('Enforcing Cryptographic'))
+		],
+		closing: {
+			step: { when: 'Dec 2025', title: 'Graduation in Enschede', body: [] },
+			photos: [photo('diploma'), photo('graduation-lunch'), photo('twente-letters')]
+		}
 	},
 	{
 		id: 'offsound',

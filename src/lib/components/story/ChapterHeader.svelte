@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="sticky top-0 z-20 -mx-4 mb-6 border-b border-hush-grey-500 bg-hush-grey-600/90 px-4 py-3 pr-32 backdrop-blur md:hidden"
+	class="sticky top-0 z-20 -mx-4 mb-6 border-b border-hush-grey-500 bg-hush-grey-600 px-4 py-3 pr-32 md:hidden"
 	aria-hidden="true"
 >
 	<span class="font-bold text-hush-blue-500">{chapter.year}</span>

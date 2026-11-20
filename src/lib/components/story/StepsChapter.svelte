@@ -9,6 +9,7 @@
 	import ChapterHeader from './ChapterHeader.svelte';
 	import StoryStep from './StoryStep.svelte';
 	import StoryMedia from './StoryMedia.svelte';
+	import PhotoStack from './PhotoStack.svelte';
 
 	let {
 		chapter,
@@ -57,6 +58,9 @@
 			{/each}
 		</div>
 	</div>
+	{#if chapter.closing}
+		<PhotoStack steps={[chapter.closing.step]} photos={chapter.closing.photos} {onopen} />
+	{/if}
 </section>
 
 <style>
