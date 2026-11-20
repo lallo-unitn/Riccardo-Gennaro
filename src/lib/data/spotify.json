@@ -1,190 +1,190 @@
 {
-	"sample": true,
+	"sample": false,
 	"updated": "2026-11-20",
 	"topArtists": {
 		"short": [
 			{
-				"name": "Sample artist 1",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Daft Punk",
+				"url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi",
+				"image": "https://i.scdn.co/image/ab67616100005174d3aa7cc0e419b6c459b08e8e",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 2",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "DiscoMostro",
+				"url": "https://open.spotify.com/artist/5WEp3iJwuFtsSQKqqYWbpO",
+				"image": "https://i.scdn.co/image/ab67616100005174b2bf7df09a3942ad71f6b860",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 3",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Pornoriviste",
+				"url": "https://open.spotify.com/artist/1yYQg89rivVglzkO9Maxz4",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d58f93302c7dc9ce4f408c00",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 4",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Ivano Fossati",
+				"url": "https://open.spotify.com/artist/7rDiwu1XRduWVZqDYrQf9Y",
+				"image": "https://i.scdn.co/image/4737c6b31669c23358a38c51bcad7a792d43b731",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 5",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Kavinsky",
+				"url": "https://open.spotify.com/artist/0UF7XLthtbSF2Eur7559oV",
+				"image": "https://i.scdn.co/image/ab676161000051742dc7b3180bad1885c6ee1320",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 6",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Münchener Freiheit",
+				"url": "https://open.spotify.com/artist/353KPo8gVAfcZfwF7BPZDy",
+				"image": "https://i.scdn.co/image/6e8b9258c76227209d7c43fe807f0cd8dbfa52ee",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 7",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Herbert Grönemeyer",
+				"url": "https://open.spotify.com/artist/5tG5dl5mS2wB5w72YBpsyg",
+				"image": "https://i.scdn.co/image/ab67616100005174760440fea70b384c97925c71",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 8",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Nena",
+				"url": "https://open.spotify.com/artist/6Tz0QRoe083BcOo2YbG9lV",
+				"image": "https://i.scdn.co/image/ab67616100005174348047cc8aa876565a20254a",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 9",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Duracel",
+				"url": "https://open.spotify.com/artist/4oy7GG5laOMbqtNPVTUw45",
+				"image": "https://i.scdn.co/image/ab67616100005174338b190db78f2f84aa1d1b94",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 10",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Elvis Presley",
+				"url": "https://open.spotify.com/artist/43ZHCT0cAZBISjO8DG9PnE",
+				"image": "https://i.scdn.co/image/ab676161000051749a93e273380982dff84c0d7c",
 				"genres": []
 			}
 		],
 		"medium": [
 			{
-				"name": "Sample artist 4",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Vasco Rossi",
+				"url": "https://open.spotify.com/artist/5l4nhyz8876RhgE2d18h65",
+				"image": "https://i.scdn.co/image/ab67616100005174822b067b9fafbbda9db68fa5",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 5",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Nena",
+				"url": "https://open.spotify.com/artist/6Tz0QRoe083BcOo2YbG9lV",
+				"image": "https://i.scdn.co/image/ab67616100005174348047cc8aa876565a20254a",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 6",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Daft Punk",
+				"url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi",
+				"image": "https://i.scdn.co/image/ab67616100005174d3aa7cc0e419b6c459b08e8e",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 7",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Falco",
+				"url": "https://open.spotify.com/artist/0hLd40hVpRDGENe4KGZLnW",
+				"image": "https://i.scdn.co/image/ab676161000051748308fbcb6fc920e79c3a3cae",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 8",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Ivano Fossati",
+				"url": "https://open.spotify.com/artist/7rDiwu1XRduWVZqDYrQf9Y",
+				"image": "https://i.scdn.co/image/4737c6b31669c23358a38c51bcad7a792d43b731",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 9",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Noyz Narcos",
+				"url": "https://open.spotify.com/artist/49UAapOfpOg1ZOU4xf2NgY",
+				"image": "https://i.scdn.co/image/ab67616100005174b8644500062a21da5dd4d9c4",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 10",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Herbert Grönemeyer",
+				"url": "https://open.spotify.com/artist/5tG5dl5mS2wB5w72YBpsyg",
+				"image": "https://i.scdn.co/image/ab67616100005174760440fea70b384c97925c71",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 11",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Kavinsky",
+				"url": "https://open.spotify.com/artist/0UF7XLthtbSF2Eur7559oV",
+				"image": "https://i.scdn.co/image/ab676161000051742dc7b3180bad1885c6ee1320",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 12",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Münchener Freiheit",
+				"url": "https://open.spotify.com/artist/353KPo8gVAfcZfwF7BPZDy",
+				"image": "https://i.scdn.co/image/6e8b9258c76227209d7c43fe807f0cd8dbfa52ee",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 13",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "883",
+				"url": "https://open.spotify.com/artist/6bMul6rmRS03x38tWKYifO",
+				"image": "https://i.scdn.co/image/ab676161000051748f93c1992603290eea5a3068",
 				"genres": []
 			}
 		],
 		"long": [
 			{
-				"name": "Sample artist 7",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Vasco Rossi",
+				"url": "https://open.spotify.com/artist/5l4nhyz8876RhgE2d18h65",
+				"image": "https://i.scdn.co/image/ab67616100005174822b067b9fafbbda9db68fa5",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 8",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Salmo",
+				"url": "https://open.spotify.com/artist/3hBQ4zniNdQf1cqqo6hzuW",
+				"image": "https://i.scdn.co/image/ab67616100005174b7ee3fb6650d358fa6a95f98",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 9",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "The Notorious B.I.G.",
+				"url": "https://open.spotify.com/artist/5me0Irg2ANcsgc93uaYrpb",
+				"image": "https://i.scdn.co/image/9bb42de208edcb69653a8e7951fa93b13f598cdd",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 10",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Fabri Fibra",
+				"url": "https://open.spotify.com/artist/7u710e44HW3K7A5eTnRqHC",
+				"image": "https://i.scdn.co/image/ab676161000051744326ce66f361289889b8d24e",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 11",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Funk Flex",
+				"url": "https://open.spotify.com/artist/34ABXKUj0gzq7R8vXjCaNj",
+				"image": "https://i.scdn.co/image/ab6761610000517422397cf46134ee18480af1b3",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 12",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Daft Punk",
+				"url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi",
+				"image": "https://i.scdn.co/image/ab67616100005174d3aa7cc0e419b6c459b08e8e",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 13",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Nena",
+				"url": "https://open.spotify.com/artist/6Tz0QRoe083BcOo2YbG9lV",
+				"image": "https://i.scdn.co/image/ab67616100005174348047cc8aa876565a20254a",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 14",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Club Dogo",
+				"url": "https://open.spotify.com/artist/4dyfAiJCbl7jS1GHOCdiJv",
+				"image": "https://i.scdn.co/image/ab676161000051747ea1c19874e1470cb83c4640",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 15",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Ensi",
+				"url": "https://open.spotify.com/artist/6dKdNHGdsBvEeNDxXV8AMP",
+				"image": "https://i.scdn.co/image/ab676161000051740214c4e543362df3b6f1dd23",
 				"genres": []
 			},
 			{
-				"name": "Sample artist 16",
-				"url": "https://open.spotify.com/",
-				"image": null,
+				"name": "Ice Cube",
+				"url": "https://open.spotify.com/artist/3Mcii5XWf6E0lrY3Uky4cA",
+				"image": "https://i.scdn.co/image/ab67616100005174650e79afafd00492e33d7b8c",
 				"genres": []
 			}
 		]
@@ -192,221 +192,292 @@
 	"topTracks": {
 		"short": [
 			{
-				"name": "Sample track 1",
-				"artists": ["Sample artist 1"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "La musica che gira intorno",
+				"artists": [
+					"Ivano Fossati"
+				],
+				"url": "https://open.spotify.com/track/6tNB3Vf9rmc47vi1VORPuV",
+				"image": "https://i.scdn.co/image/ab67616d00001e02302b6f565a26ca2a43e157c7"
 			},
 			{
-				"name": "Sample track 2",
-				"artists": ["Sample artist 2"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Nightcall",
+				"artists": [
+					"Kavinsky"
+				],
+				"url": "https://open.spotify.com/track/0U0ldCRmgCqhVvD6ksG63j",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d6d8c2eaa1f9031b62f7a3f7"
 			},
 			{
-				"name": "Sample track 3",
-				"artists": ["Sample artist 3"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Leuchtturm - Remastered 2024",
+				"artists": [
+					"Nena"
+				],
+				"url": "https://open.spotify.com/track/1MJfBK93ktxlvrcbwe3vH9",
+				"image": "https://i.scdn.co/image/ab67616d00001e02aad6c8766ffd364454df5465"
 			},
 			{
-				"name": "Sample track 4",
-				"artists": ["Sample artist 4"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "One More Time",
+				"artists": [
+					"Daft Punk"
+				],
+				"url": "https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV",
+				"image": "https://i.scdn.co/image/ab67616d00001e021e81bff9807a9e629fce5ade"
 			},
 			{
-				"name": "Sample track 5",
-				"artists": ["Sample artist 5"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Pacific Coast Highway - Jackson Remix",
+				"artists": [
+					"Kavinsky"
+				],
+				"url": "https://open.spotify.com/track/6bkMRRgsfAq7lv3iNT3xjD",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d6d8c2eaa1f9031b62f7a3f7"
 			},
 			{
-				"name": "Sample track 6",
-				"artists": ["Sample artist 6"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Aerodynamic",
+				"artists": [
+					"Daft Punk"
+				],
+				"url": "https://open.spotify.com/track/3H3cOQ6LBLSvmcaV7QkZEu",
+				"image": "https://i.scdn.co/image/ab67616d00001e021e81bff9807a9e629fce5ade"
 			},
 			{
-				"name": "Sample track 7",
-				"artists": ["Sample artist 7"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Digital Love",
+				"artists": [
+					"Daft Punk"
+				],
+				"url": "https://open.spotify.com/track/2VEZx7NWsZ1D0eJ4uv5Fym",
+				"image": "https://i.scdn.co/image/ab67616d00001e021e81bff9807a9e629fce5ade"
 			},
 			{
-				"name": "Sample track 8",
-				"artists": ["Sample artist 1"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Harder, Better, Faster, Stronger",
+				"artists": [
+					"Daft Punk"
+				],
+				"url": "https://open.spotify.com/track/5W3cjX2J3tjhG8zb6u0qHn",
+				"image": "https://i.scdn.co/image/ab67616d00001e021e81bff9807a9e629fce5ade"
 			},
 			{
-				"name": "Sample track 9",
-				"artists": ["Sample artist 2"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Westerland",
+				"artists": [
+					"Die Ärzte"
+				],
+				"url": "https://open.spotify.com/track/5aWpvFnByyWodgqYlC9kha",
+				"image": "https://i.scdn.co/image/ab67616d00001e02b31ca7bbd75637f5a590c310"
 			},
 			{
-				"name": "Sample track 10",
-				"artists": ["Sample artist 3"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Nudo",
+				"artists": [
+					"DiscoMostro"
+				],
+				"url": "https://open.spotify.com/track/07AldOIK4FRapo3uiuOkSe",
+				"image": "https://i.scdn.co/image/ab67616d00001e0204e27aa3745ef90fa2b626e8"
 			}
 		],
 		"medium": [
 			{
-				"name": "Sample track 5",
-				"artists": ["Sample artist 5"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Vienna Calling",
+				"artists": [
+					"Falco"
+				],
+				"url": "https://open.spotify.com/track/6tetorrFfVEwugqcgfwEm1",
+				"image": "https://i.scdn.co/image/ab67616d00001e02731d2eb04541bef9e4434d4e"
 			},
 			{
-				"name": "Sample track 6",
-				"artists": ["Sample artist 6"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Leuchtturm - Remastered 2024",
+				"artists": [
+					"Nena"
+				],
+				"url": "https://open.spotify.com/track/1MJfBK93ktxlvrcbwe3vH9",
+				"image": "https://i.scdn.co/image/ab67616d00001e02aad6c8766ffd364454df5465"
 			},
 			{
-				"name": "Sample track 7",
-				"artists": ["Sample artist 7"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "? (Fragezeichen)",
+				"artists": [
+					"Nena"
+				],
+				"url": "https://open.spotify.com/track/2pjAcvI28KfLWOFchlyomD",
+				"image": "https://i.scdn.co/image/ab67616d00001e02a8711533b0258fb126fc7670"
 			},
 			{
-				"name": "Sample track 8",
-				"artists": ["Sample artist 1"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "La musica che gira intorno",
+				"artists": [
+					"Ivano Fossati"
+				],
+				"url": "https://open.spotify.com/track/6tNB3Vf9rmc47vi1VORPuV",
+				"image": "https://i.scdn.co/image/ab67616d00001e02302b6f565a26ca2a43e157c7"
 			},
 			{
-				"name": "Sample track 9",
-				"artists": ["Sample artist 2"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Una nuova canzone per lei - Remastered 2025",
+				"artists": [
+					"Vasco Rossi"
+				],
+				"url": "https://open.spotify.com/track/2epf5YSqfhMrvCPMAuZAdb",
+				"image": "https://i.scdn.co/image/ab67616d00001e02906ec74eeff002c65b4024e6"
 			},
 			{
-				"name": "Sample track 10",
-				"artists": ["Sample artist 3"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Nightcall",
+				"artists": [
+					"Kavinsky"
+				],
+				"url": "https://open.spotify.com/track/0U0ldCRmgCqhVvD6ksG63j",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d6d8c2eaa1f9031b62f7a3f7"
 			},
 			{
-				"name": "Sample track 11",
-				"artists": ["Sample artist 4"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Domani si, adesso no - Remastered 2025",
+				"artists": [
+					"Vasco Rossi"
+				],
+				"url": "https://open.spotify.com/track/2AjlWJJkJGugiLmEF2mJz9",
+				"image": "https://i.scdn.co/image/ab67616d00001e02906ec74eeff002c65b4024e6"
 			},
 			{
-				"name": "Sample track 12",
-				"artists": ["Sample artist 5"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Cosa succede in città - Remastered 2025",
+				"artists": [
+					"Vasco Rossi"
+				],
+				"url": "https://open.spotify.com/track/5EsGwZ4CRIpFi5as0P95BX",
+				"image": "https://i.scdn.co/image/ab67616d00001e02906ec74eeff002c65b4024e6"
 			},
 			{
-				"name": "Sample track 13",
-				"artists": ["Sample artist 6"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Cosa c'è - Remastered 2025",
+				"artists": [
+					"Vasco Rossi"
+				],
+				"url": "https://open.spotify.com/track/6yjGrha9nJGLJFoMzCDjsK",
+				"image": "https://i.scdn.co/image/ab67616d00001e02906ec74eeff002c65b4024e6"
 			},
 			{
-				"name": "Sample track 14",
-				"artists": ["Sample artist 7"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Haus der drei Sonnen",
+				"artists": [
+					"Nena"
+				],
+				"url": "https://open.spotify.com/track/2yZNJLFoqxOqKghzLSXZcI",
+				"image": "https://i.scdn.co/image/ab67616d00001e02f67b431d87a824bd9ddb8a60"
 			}
 		],
 		"long": [
 			{
-				"name": "Sample track 9",
-				"artists": ["Sample artist 2"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "ON FIRE",
+				"artists": [
+					"Salmo",
+					"Low Kidd"
+				],
+				"url": "https://open.spotify.com/track/3fMv8yD3CR4KuOEddovifJ",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d3ddaef2bd4c8f648536e057"
 			},
 			{
-				"name": "Sample track 10",
-				"artists": ["Sample artist 3"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "BEATCOIN",
+				"artists": [
+					"Salmo"
+				],
+				"url": "https://open.spotify.com/track/7fdHC4jR6EXhu2wcA3ljk8",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d3ddaef2bd4c8f648536e057"
 			},
 			{
-				"name": "Sample track 11",
-				"artists": ["Sample artist 4"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Muore Il Giorno",
+				"artists": [
+					"Succo Marcio"
+				],
+				"url": "https://open.spotify.com/track/4aALEw09Am6CxO3O9XmuMS",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d72a5ac6a74fde8e7f3a1384"
 			},
 			{
-				"name": "Sample track 12",
-				"artists": ["Sample artist 5"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Domani si, adesso no",
+				"artists": [
+					"Vasco Rossi"
+				],
+				"url": "https://open.spotify.com/track/2pnmlp8GMdJ5kKzAx2pHU5",
+				"image": "https://i.scdn.co/image/ab67616d00001e02a2f64ba6f56df12fd6c86e62"
 			},
 			{
-				"name": "Sample track 13",
-				"artists": ["Sample artist 6"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Leuchtturm",
+				"artists": [
+					"Nena"
+				],
+				"url": "https://open.spotify.com/track/4s5c5vqVno63R0QvWCiDMN",
+				"image": "https://i.scdn.co/image/ab67616d00001e027e51ffd6a2e8f77ffd56bb8f"
 			},
 			{
-				"name": "Sample track 14",
-				"artists": ["Sample artist 7"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "N€UROLOGIA",
+				"artists": [
+					"Salmo"
+				],
+				"url": "https://open.spotify.com/track/5JzqglN4c6vGXh5iyTmjVi",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d3ddaef2bd4c8f648536e057"
 			},
 			{
-				"name": "Sample track 15",
-				"artists": ["Sample artist 1"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "Vienna Calling",
+				"artists": [
+					"Falco"
+				],
+				"url": "https://open.spotify.com/track/6tetorrFfVEwugqcgfwEm1",
+				"image": "https://i.scdn.co/image/ab67616d00001e02731d2eb04541bef9e4434d4e"
 			},
 			{
-				"name": "Sample track 16",
-				"artists": ["Sample artist 2"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "CRUDELE",
+				"artists": [
+					"Salmo"
+				],
+				"url": "https://open.spotify.com/track/2WxfVrolnNhQF06pOnsyyT",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d3ddaef2bd4c8f648536e057"
 			},
 			{
-				"name": "Sample track 17",
-				"artists": ["Sample artist 3"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "BOUNCE!",
+				"artists": [
+					"Salmo"
+				],
+				"url": "https://open.spotify.com/track/3C4DYVH4fI1mqsPQq69ccR",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d3ddaef2bd4c8f648536e057"
 			},
 			{
-				"name": "Sample track 18",
-				"artists": ["Sample artist 4"],
-				"url": "https://open.spotify.com/",
-				"image": null
+				"name": "SINCERO",
+				"artists": [
+					"Salmo"
+				],
+				"url": "https://open.spotify.com/track/33Ll0tKMKNLwuUapU5UvKk",
+				"image": "https://i.scdn.co/image/ab67616d00001e02d3ddaef2bd4c8f648536e057"
 			}
 		]
 	},
 	"recent": [
 		{
-			"name": "Sample track 21",
-			"artists": ["Sample artist 7"],
-			"url": "https://open.spotify.com/",
-			"image": null
+			"name": "Treno",
+			"artists": [
+				"DiscoMostro"
+			],
+			"url": "https://open.spotify.com/track/2qh28aNmq1hyBOWN7y0zQ6",
+			"image": "https://i.scdn.co/image/ab67616d00001e02f526850f21ef2d22f3fd90f6"
 		},
 		{
-			"name": "Sample track 22",
-			"artists": ["Sample artist 1"],
-			"url": "https://open.spotify.com/",
-			"image": null
+			"name": "Diciotto",
+			"artists": [
+				"DiscoMostro"
+			],
+			"url": "https://open.spotify.com/track/7LtqEUJlrDS7jgVFTbCfVn",
+			"image": "https://i.scdn.co/image/ab67616d00001e02f526850f21ef2d22f3fd90f6"
 		},
 		{
-			"name": "Sample track 23",
-			"artists": ["Sample artist 2"],
-			"url": "https://open.spotify.com/",
-			"image": null
+			"name": "Gelato",
+			"artists": [
+				"DiscoMostro"
+			],
+			"url": "https://open.spotify.com/track/6tPKmO8J4NFE59lh2e1FoT",
+			"image": "https://i.scdn.co/image/ab67616d00001e02f526850f21ef2d22f3fd90f6"
 		},
 		{
-			"name": "Sample track 24",
-			"artists": ["Sample artist 3"],
-			"url": "https://open.spotify.com/",
-			"image": null
+			"name": "Troppo",
+			"artists": [
+				"DiscoMostro"
+			],
+			"url": "https://open.spotify.com/track/5zorxKI5X7Qap1UMVup0CL",
+			"image": "https://i.scdn.co/image/ab67616d00001e02f526850f21ef2d22f3fd90f6"
 		},
 		{
-			"name": "Sample track 25",
-			"artists": ["Sample artist 4"],
-			"url": "https://open.spotify.com/",
-			"image": null
+			"name": "Temporale",
+			"artists": [
+				"DiscoMostro"
+			],
+			"url": "https://open.spotify.com/track/2I7k1f02oND1FmIH2ZuVEp",
+			"image": "https://i.scdn.co/image/ab67616d00001e02f526850f21ef2d22f3fd90f6"
 		}
 	]
 }
