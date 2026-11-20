@@ -21,6 +21,12 @@
 	// Every element with data-chapter, in page order: the opening, the chapters, the finale.
 	const sectionIds = ['top', ...chapters.map((c) => c.id), 'now'];
 
+	// The page background, year badge and chapter rail take the palette of the chapter on screen.
+	$effect(() => {
+		const theme = chapters.find((c) => c.id === storyState.active)?.theme ?? 'hush';
+		document.documentElement.dataset.theme = theme;
+	});
+
 	let lightbox = $state(-1);
 	const onopen = (id: string) => (lightbox = photos.findIndex((p) => p.id === id));
 </script>
@@ -31,6 +37,7 @@
 <ChapterRail />
 
 <main
+	data-theme="hush"
 	class="relative z-10 mx-auto max-w-screen-xl px-4 md:pl-8 md:pr-16 lg:pl-12 lg:pr-44"
 	{@attach activeChild('[data-chapter]', (i) => (storyState.active = sectionIds[i]))}
 >

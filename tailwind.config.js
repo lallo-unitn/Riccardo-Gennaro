@@ -4,36 +4,38 @@ export default {
 	theme: {
 		extend: {
 			// Added to Tailwind's default palette (gray, sky, ...), which the site also uses.
+			// Every colour is a CSS variable (src/app.css), so a chapter can switch palette:
+			// <section data-theme="spotify"> recolours everything inside it.
 			colors: {
 				'hush-blue': {
-					100: '#69bce5',
-					200: '#53b2e1',
-					300: '#3ea9de',
-					400: '#289fda',
-					500: '#289fda',
-					600: '#248fc4',
-					700: '#207fae',
-					800: '#1c6f99',
-					900: '#185f83'
+					100: 'rgb(var(--c-accent-100) / <alpha-value>)',
+					200: 'rgb(var(--c-accent-200) / <alpha-value>)',
+					300: 'rgb(var(--c-accent-300) / <alpha-value>)',
+					400: 'rgb(var(--c-accent-400) / <alpha-value>)',
+					500: 'rgb(var(--c-accent-500) / <alpha-value>)',
+					600: 'rgb(var(--c-accent-600) / <alpha-value>)',
+					700: 'rgb(var(--c-accent-700) / <alpha-value>)',
+					800: 'rgb(var(--c-accent-800) / <alpha-value>)',
+					900: 'rgb(var(--c-accent-900) / <alpha-value>)'
 				},
 				'hush-grey': {
-					// was #808080 (3.7:1 on #292929, below WCAG AA's 4.5:1); now ~6:1
-					100: '#a3a3a3',
-					200: '#696969',
-					300: '#535353',
-					400: '#3d3d3d',
-					500: '#292929',
-					600: '#222222',
-					700: '#1b1b1b',
-					800: '#151515',
-					900: '#0e0e0e'
+					100: 'rgb(var(--c-grey-100) / <alpha-value>)',
+					200: 'rgb(var(--c-grey-200) / <alpha-value>)',
+					300: 'rgb(var(--c-grey-300) / <alpha-value>)',
+					400: 'rgb(var(--c-grey-400) / <alpha-value>)',
+					500: 'rgb(var(--c-grey-500) / <alpha-value>)',
+					600: 'rgb(var(--c-grey-600) / <alpha-value>)',
+					700: 'rgb(var(--c-grey-700) / <alpha-value>)',
+					800: 'rgb(var(--c-grey-800) / <alpha-value>)',
+					900: 'rgb(var(--c-grey-900) / <alpha-value>)'
 				},
-				'hush-white': '#f8f8f8',
+				'hush-white': 'rgb(var(--c-paper) / <alpha-value>)',
 				// Buttons ("View PDF", "GitHub", ...)
 				action: {
-					DEFAULT: '#1c64f2',
-					hover: '#1a56db',
-					ring: '#1e429f'
+					DEFAULT: 'rgb(var(--c-action) / <alpha-value>)',
+					hover: 'rgb(var(--c-action-hover) / <alpha-value>)',
+					ring: 'rgb(var(--c-action-ring) / <alpha-value>)',
+					fg: 'rgb(var(--c-action-fg) / <alpha-value>)'
 				}
 			},
 			fontFamily: {

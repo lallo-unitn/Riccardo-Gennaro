@@ -11,7 +11,7 @@
 	}: { chapter: Chapter; number: number; onopen: (photoId: string) => void } = $props();
 </script>
 
-<section id={chapter.id} data-chapter class="chapter relative">
+<section id={chapter.id} data-chapter data-theme={chapter.theme} class="chapter relative">
 	<ChapterHeader {chapter} {number} />
 	<PhotoStack steps={chapter.steps} photos={chapter.photos ?? []} {onopen} />
 </section>

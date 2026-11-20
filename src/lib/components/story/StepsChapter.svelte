@@ -32,7 +32,7 @@
 	const shown = $derived(stage.forStep[activeStep] ?? 0);
 </script>
 
-<section id={chapter.id} data-chapter class="chapter relative">
+<section id={chapter.id} data-chapter data-theme={chapter.theme} class="chapter relative">
 	<ChapterHeader {chapter} {number} />
 	<div
 		class="md:grid md:grid-cols-2 md:gap-12 lg:gap-20"

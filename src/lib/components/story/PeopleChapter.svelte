@@ -16,7 +16,7 @@
 	const tilts = ['-rotate-3', 'rotate-2', '-rotate-1'];
 </script>
 
-<section id={chapter.id} data-chapter class="chapter relative pb-24">
+<section id={chapter.id} data-chapter data-theme={chapter.theme} class="chapter relative pb-24">
 	<ChapterHeader {chapter} {number} />
 	<div class="grid gap-10 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
 		{#each chapter.photos ?? [] as photo, i (photo.id)}

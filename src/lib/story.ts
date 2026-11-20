@@ -67,6 +67,8 @@ export interface Chapter {
 	short: string;
 	title: string;
 	intro: string;
+	/** Colour palette for the chapter (see the themes in src/app.css). Default: the site's own. */
+	theme?: 'spotify' | 'letterboxd' | 'aprilia';
 	/** How the chapter is staged. */
 	scene: 'steps' | 'stack' | 'people' | 'films';
 	steps: Step[];
@@ -153,6 +155,7 @@ const trackItems = (tracks: MusicTrack[]) =>
 /** Spotify listening stats: one step per time range, then the last tracks played. */
 const musicChapter: Chapter = {
 	id: 'music',
+	theme: 'spotify',
 	short: 'Music',
 	year: music.updated.slice(0, 4),
 	title: 'On repeat',
@@ -291,6 +294,7 @@ export const chapters: Chapter[] = [
 	},
 	{
 		id: 'ride',
+		theme: 'aprilia',
 		short: 'Riding',
 		year: '2026',
 		title: 'On two wheels',
@@ -309,6 +313,7 @@ export const chapters: Chapter[] = [
 	},
 	{
 		id: 'films',
+		theme: 'letterboxd',
 		short: 'Films',
 		year: '2026',
 		title: 'At the movies',

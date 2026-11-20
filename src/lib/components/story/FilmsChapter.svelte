@@ -17,12 +17,14 @@
 	const maxRating = Math.max(...s.ratings.map((r) => r.count));
 	const maxDecade = Math.max(...s.decades.map((d) => d.count));
 	const maxDirector = Math.max(...s.directors.map((d) => d.count));
+	// Letterboxd's orange, green and blue dots where the theme has them, else the accent.
+	const dot = (n: number) => `rgb(var(--c-dot-${n}, var(--c-accent-300)))`;
 	const half = (stars: number) => `${Math.floor(stars) || ''}${stars % 1 ? '½' : ''}`;
 	const heart =
 		'M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.1 0 3.6 1.2 4.4 2.6.8-1.4 2.3-2.6 4.4-2.6 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z';
 </script>
 
-<section id={chapter.id} data-chapter class="chapter relative pb-24">
+<section id={chapter.id} data-chapter data-theme={chapter.theme} class="chapter relative pb-24">
 	<ChapterHeader {chapter} {number} />
 
 	<!-- 1. Headline numbers and the pinned rating chart. -->
@@ -32,17 +34,23 @@
 		>
 			<dl class="reveal grid grid-cols-3 gap-4 md:grid-cols-1 md:gap-8" {@attach reveal}>
 				<div>
-					<dt class="text-sm uppercase tracking-[0.2em] text-hush-blue-300">Films</dt>
+					<dt class="text-sm uppercase tracking-[0.2em] text-hush-blue-300" style:color={dot(1)}>
+						Films
+					</dt>
 					<dd class="text-5xl font-black text-white md:text-7xl">{s.count}</dd>
 				</div>
 				<div>
-					<dt class="text-sm uppercase tracking-[0.2em] text-hush-blue-300">Average</dt>
+					<dt class="text-sm uppercase tracking-[0.2em] text-hush-blue-300" style:color={dot(2)}>
+						Average
+					</dt>
 					<dd class="text-5xl font-black text-white md:text-7xl">
 						{s.average.toFixed(1)}<span class="text-2xl text-hush-grey-100 md:text-4xl">/5</span>
 					</dd>
 				</div>
 				<div>
-					<dt class="text-sm uppercase tracking-[0.2em] text-hush-blue-300">Loved</dt>
+					<dt class="text-sm uppercase tracking-[0.2em] text-hush-blue-300" style:color={dot(3)}>
+						Loved
+					</dt>
 					<dd class="text-5xl font-black text-white md:text-7xl">{s.liked}</dd>
 				</div>
 			</dl>
@@ -137,6 +145,7 @@
 					href={f.url}
 					target="_blank"
 					rel="noopener noreferrer"
+					style:border-color={dot(1)}
 					class="flex h-full flex-col rounded-lg border-l-4 border-dashed border-hush-blue-500 bg-hush-white px-4 py-3 text-hush-grey-700 shadow-xl shadow-black/40 transition hover:-translate-y-1 hover:rotate-1"
 				>
 					<span class="text-xs font-semibold uppercase tracking-widest text-hush-grey-200"
@@ -146,8 +155,11 @@
 					<span class="mt-2 flex items-center justify-between">
 						<Stars rating={f.rating} tint="text-hush-blue-800" />
 						{#if f.liked}
-							<svg viewBox="0 0 24 24" class="h-4 w-4 text-orange-600" role="img" aria-label="Loved"
-								><path d={heart} fill="currentColor" /></svg
+							<svg
+								viewBox="0 0 24 24"
+								class="h-4 w-4 text-[rgb(var(--c-like))]"
+								role="img"
+								aria-label="Loved"><path d={heart} fill="currentColor" /></svg
 							>
 						{/if}
 					</span>
