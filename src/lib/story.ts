@@ -310,7 +310,7 @@ export const chapters: Chapter[] = [
 	{
 		id: 'films',
 		short: 'Films',
-		year: '2025',
+		year: '2026',
 		title: 'At the movies',
 		intro: `${filmStats.count} films logged on Letterboxd since ${filmStats.since}. Here is what they say about my taste.`,
 		scene: 'films',
