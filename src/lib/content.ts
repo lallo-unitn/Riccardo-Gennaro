@@ -71,6 +71,8 @@ export interface Job {
 	location: string;
 	/** One entry per line. Leave empty for no description. */
 	description: string[];
+	/** Company logo (import it from $lib/assets/logos/). Shown in the story; optional. */
+	logo?: string;
 }
 
 export interface School {

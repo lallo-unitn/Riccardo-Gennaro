@@ -12,7 +12,6 @@
 	import Hero from '$lib/components/story/Hero.svelte';
 	import StepsChapter from '$lib/components/story/StepsChapter.svelte';
 	import StackChapter from '$lib/components/story/StackChapter.svelte';
-	import PaperChapter from '$lib/components/story/PaperChapter.svelte';
 	import PeopleChapter from '$lib/components/story/PeopleChapter.svelte';
 	import Finale from '$lib/components/story/Finale.svelte';
 	import YearBadge from '$lib/components/story/YearBadge.svelte';
@@ -38,8 +37,6 @@
 	{#each chapters as chapter, i (chapter.id)}
 		{#if chapter.scene === 'stack'}
 			<StackChapter {chapter} number={i + 1} {onopen} />
-		{:else if chapter.scene === 'paper'}
-			<PaperChapter {chapter} number={i + 1} />
 		{:else if chapter.scene === 'people'}
 			<PeopleChapter {chapter} number={i + 1} {onopen} />
 		{:else}

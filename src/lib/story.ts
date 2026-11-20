@@ -26,6 +26,7 @@ export type Media =
 	| { kind: 'doc'; image: string; alt: string; position?: string }
 	| { kind: 'photo'; photo: Photo }
 	| { kind: 'logos'; logos: { src: string; alt: string }[] }
+	| { kind: 'brand'; src: string; alt: string }
 	| { kind: 'word'; text: string };
 
 export interface Step {
@@ -48,7 +49,7 @@ export interface Chapter {
 	title: string;
 	intro: string;
 	/** How the chapter is staged. */
-	scene: 'steps' | 'stack' | 'paper' | 'people';
+	scene: 'steps' | 'stack' | 'people';
 	steps: Step[];
 	/** Photos for the 'stack' and 'people' scenes. */
 	photos?: Photo[];
@@ -84,12 +85,13 @@ const docMedia = (w: Work): Media => ({
 	position: w.imagePosition
 });
 
-const fromJob = (j: Job, media?: Media): Step => ({
+/** A job's picture: its logo if content.ts has one, otherwise the given fallback. */
+const fromJob = (j: Job, fallback?: Media): Step => ({
 	when: `${j.start} – ${j.end}`,
 	title: j.title,
 	subtitle: `${j.organization}, ${j.location}`,
 	body: j.description,
-	media
+	media: j.logo ? { kind: 'brand', src: j.logo, alt: `${j.organization} logo` } : fallback
 });
 
 const fromDegree = (d: Degree): Step => ({
@@ -194,21 +196,11 @@ export const chapters: Chapter[] = [
 		year: '2025',
 		title: 'Research at FBK',
 		intro:
-			'An internship at Fondazione Bruno Kessler on privacy-preserving vehicle authentication, which became the master’s thesis.',
+			'An internship at Fondazione Bruno Kessler on privacy-preserving vehicle authentication, which became the master’s thesis and then a peer-reviewed paper.',
 		scene: 'steps',
 		steps: [
 			fromJob(job('Fondazione Bruno Kessler'), { kind: 'word', text: 'V2X' }),
-			fromWork(thesis('Revisiting the ETSI'), 'Sep 2025')
-		]
-	},
-	{
-		id: 'paper',
-		short: 'Paper',
-		year: String(paper.year),
-		title: 'Published',
-		intro: 'The thesis work, peer-reviewed.',
-		scene: 'paper',
-		steps: [
+			fromWork(thesis('Revisiting the ETSI'), 'Sep 2025'),
 			{
 				when: String(paper.year),
 				title: paper.title,

@@ -64,6 +64,20 @@
 			/>
 		{/each}
 	</div>
+{:else if media.kind === 'brand'}
+	<div
+		class="flex items-center justify-center rounded-2xl bg-white shadow-2xl shadow-black/50 {stage
+			? 'h-48 w-[min(26rem,85%)] p-10'
+			: 'h-24 w-56 p-5'}"
+	>
+		<img
+			src={media.src}
+			alt={stage ? '' : media.alt}
+			loading="lazy"
+			decoding="async"
+			class="max-h-full max-w-full object-contain"
+		/>
+	</div>
 {:else if media.kind === 'word'}
 	<span
 		aria-hidden="true"
