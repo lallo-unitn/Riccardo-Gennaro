@@ -715,3 +715,43 @@ export const photos: Photo[] = [
 		caption: 'Signing the diploma'
 	}
 ];
+
+// ---------------------------------------------------------------------------
+// Films
+// The films themselves come from a Letterboxd export: see scripts/letterboxd.js.
+// ---------------------------------------------------------------------------
+
+/**
+ * Directors counted in the Films chapter. Letterboxd exports don't include directors,
+ * so list the films by hand, spelled exactly as in the export.
+ */
+export const filmDirectors: { name: string; films: string[] }[] = [
+	{
+		name: 'Quentin Tarantino',
+		films: [
+			'Reservoir Dogs',
+			'Pulp Fiction',
+			'Kill Bill: Vol. 1',
+			'Kill Bill: Vol. 2',
+			'Death Proof',
+			'Inglourious Basterds',
+			'Django Unchained',
+			'The Hateful Eight',
+			'Once Upon a Time... in Hollywood'
+		]
+	},
+	{
+		name: 'Steven Spielberg',
+		films: [
+			'Close Encounters of the Third Kind',
+			"Schindler's List",
+			'Saving Private Ryan',
+			'Catch Me If You Can',
+			'War of the Worlds',
+			'Bridge of Spies'
+		]
+	},
+	{ name: 'Stanley Kubrick', films: ['A Clockwork Orange', 'The Shining', 'Full Metal Jacket'] },
+	{ name: 'David Cronenberg', films: ['Videodrome', 'The Fly', 'Crimes of the Future'] },
+	{ name: 'Ari Aster', films: ['Hereditary', 'Midsommar', 'Beau Is Afraid'] }
+];

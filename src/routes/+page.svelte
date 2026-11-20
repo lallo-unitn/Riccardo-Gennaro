@@ -13,6 +13,7 @@
 	import StepsChapter from '$lib/components/story/StepsChapter.svelte';
 	import StackChapter from '$lib/components/story/StackChapter.svelte';
 	import PeopleChapter from '$lib/components/story/PeopleChapter.svelte';
+	import FilmsChapter from '$lib/components/story/FilmsChapter.svelte';
 	import Finale from '$lib/components/story/Finale.svelte';
 	import YearBadge from '$lib/components/story/YearBadge.svelte';
 	import ChapterRail from '$lib/components/story/ChapterRail.svelte';
@@ -37,6 +38,8 @@
 	{#each chapters as chapter, i (chapter.id)}
 		{#if chapter.scene === 'stack'}
 			<StackChapter {chapter} number={i + 1} {onopen} />
+		{:else if chapter.scene === 'films'}
+			<FilmsChapter {chapter} number={i + 1} />
 		{:else if chapter.scene === 'people'}
 			<PeopleChapter {chapter} number={i + 1} {onopen} />
 		{:else}

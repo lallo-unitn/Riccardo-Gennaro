@@ -17,6 +17,7 @@ import {
 	type Publication,
 	type Link
 } from '$lib/content';
+import { filmStats } from '$lib/films';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -49,7 +50,7 @@ export interface Chapter {
 	title: string;
 	intro: string;
 	/** How the chapter is staged. */
-	scene: 'steps' | 'stack' | 'people';
+	scene: 'steps' | 'stack' | 'people' | 'films';
 	steps: Step[];
 	/** Photos for the 'stack' and 'people' scenes. */
 	photos?: Photo[];
@@ -233,6 +234,15 @@ export const chapters: Chapter[] = [
 			}
 		],
 		photos: [photo('bike'), photo('cockpit'), photo('ride')]
+	},
+	{
+		id: 'films',
+		short: 'Films',
+		year: '2025',
+		title: 'At the movies',
+		intro: `${filmStats.count} films logged on Letterboxd since ${filmStats.since}. Here is what they say about my taste.`,
+		scene: 'films',
+		steps: []
 	},
 	{
 		id: 'people',
