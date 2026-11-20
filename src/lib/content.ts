@@ -37,8 +37,6 @@ import jan from '$lib/assets/img/jan.webp';
 
 import defenceImg from '$lib/assets/gallery/defence.webp';
 import defenceFull from '$lib/assets/gallery/defence-full.webp';
-import degreeImg from '$lib/assets/gallery/degree.webp';
-import degreeFull from '$lib/assets/gallery/degree-full.webp';
 import peopleChoiceImg from '$lib/assets/gallery/people_choice.webp';
 import peopleChoiceFull from '$lib/assets/gallery/people_choice-full.webp';
 import printImg from '$lib/assets/gallery/print.webp';
@@ -47,12 +45,32 @@ import testingImg from '$lib/assets/gallery/testing.webp';
 import testingFull from '$lib/assets/gallery/testing-full.webp';
 import maskImg from '$lib/assets/gallery/mask.webp';
 import maskFull from '$lib/assets/gallery/mask-full.webp';
-import tannImg from '$lib/assets/gallery/tann.webp';
-import tannFull from '$lib/assets/gallery/tann-full.webp';
 import stallmanImg from '$lib/assets/gallery/stallman.webp';
 import stallmanFull from '$lib/assets/gallery/stallman-full.webp';
 import horsingImg from '$lib/assets/gallery/horsing_around.webp';
 import horsingFull from '$lib/assets/gallery/horsing_around-full.webp';
+import bachelorGradImg from '$lib/assets/gallery/bachelor-graduation.webp';
+import bachelorGradFull from '$lib/assets/gallery/bachelor-graduation-full.webp';
+import gradLunchImg from '$lib/assets/gallery/graduation-lunch.webp';
+import gradLunchFull from '$lib/assets/gallery/graduation-lunch-full.webp';
+import westernImg from '$lib/assets/gallery/western-party.webp';
+import westernFull from '$lib/assets/gallery/western-party-full.webp';
+import familyLunchImg from '$lib/assets/gallery/family-lunch.webp';
+import familyLunchFull from '$lib/assets/gallery/family-lunch-full.webp';
+import sofaImg from '$lib/assets/gallery/sofa.webp';
+import sofaFull from '$lib/assets/gallery/sofa-full.webp';
+import group2024Img from '$lib/assets/gallery/group-2024.webp';
+import group2024Full from '$lib/assets/gallery/group-2024-full.webp';
+import celebration2022Img from '$lib/assets/gallery/celebration-2022.webp';
+import celebration2022Full from '$lib/assets/gallery/celebration-2022-full.webp';
+import eventImg from '$lib/assets/gallery/event.webp';
+import eventFull from '$lib/assets/gallery/event-full.webp';
+import rideImg from '$lib/assets/gallery/ride.webp';
+import rideFull from '$lib/assets/gallery/ride-full.webp';
+import bikeImg from '$lib/assets/gallery/bike.webp';
+import bikeFull from '$lib/assets/gallery/bike-full.webp';
+import cockpitImg from '$lib/assets/gallery/cockpit.webp';
+import cockpitFull from '$lib/assets/gallery/cockpit-full.webp';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -508,15 +526,6 @@ export const photos: Photo[] = [
 		caption: 'Bachelor’s thesis defence'
 	},
 	{
-		id: 'degree',
-		src: degreeImg,
-		full: degreeFull,
-		width: 800,
-		height: 534,
-		alt: 'Group photo of friends indoors',
-		caption: 'Graduation day'
-	},
-	{
 		id: 'people-choice',
 		src: peopleChoiceImg,
 		full: peopleChoiceFull,
@@ -553,15 +562,6 @@ export const photos: Photo[] = [
 		caption: 'OFF-SOUND demo'
 	},
 	{
-		id: 'tann',
-		src: tannImg,
-		full: tannFull,
-		width: 800,
-		height: 600,
-		alt: 'Group photo at an event',
-		caption: 'With friends'
-	},
-	{
 		id: 'stallman',
 		src: stallmanImg,
 		full: stallmanFull,
@@ -578,5 +578,104 @@ export const photos: Photo[] = [
 		height: 640,
 		alt: 'Wearing a horse costume',
 		caption: 'Horsing around'
+	},
+	{
+		id: 'bachelor-graduation',
+		src: bachelorGradImg,
+		full: bachelorGradFull,
+		width: 800,
+		height: 534,
+		alt: 'Group photo in a university hall on graduation day',
+		caption: 'Bachelor’s graduation'
+	},
+	{
+		id: 'graduation-lunch',
+		src: gradLunchImg,
+		full: gradLunchFull,
+		width: 600,
+		height: 800,
+		alt: 'Celebration lunch, the graduate wearing a laurel wreath',
+		caption: 'Graduation lunch'
+	},
+	{
+		id: 'western-party',
+		src: westernImg,
+		full: westernFull,
+		width: 800,
+		height: 533,
+		alt: 'Friends in cowboy hats and bandanas at a western-themed party',
+		caption: 'Western party'
+	},
+	{
+		id: 'family-lunch',
+		src: familyLunchImg,
+		full: familyLunchFull,
+		width: 800,
+		height: 369,
+		alt: 'A long table outdoors, lunch with family and friends',
+		caption: 'Lunch under the porch'
+	},
+	{
+		id: 'sofa',
+		src: sofaImg,
+		full: sofaFull,
+		width: 800,
+		height: 600,
+		alt: 'Friends on a sofa under a big window',
+		caption: 'Lazy afternoon'
+	},
+	{
+		id: 'group-2024',
+		src: group2024Img,
+		full: group2024Full,
+		width: 640,
+		height: 516,
+		alt: 'Six friends posing outdoors, making peace signs',
+		caption: 'September 2024'
+	},
+	{
+		id: 'celebration-2022',
+		src: celebration2022Img,
+		full: celebration2022Full,
+		width: 800,
+		height: 600,
+		alt: 'Friends around a table outdoors, one holding a bouquet',
+		caption: 'A sunny celebration'
+	},
+	{
+		id: 'event',
+		src: eventImg,
+		full: eventFull,
+		width: 800,
+		height: 600,
+		alt: 'Group photo with a guest at an event',
+		caption: 'At an event'
+	},
+	{
+		id: 'ride',
+		src: rideImg,
+		full: rideFull,
+		width: 800,
+		height: 533,
+		alt: 'Riding a black and red sport motorcycle on a mountain road',
+		caption: 'Mountain roads'
+	},
+	{
+		id: 'bike',
+		src: bikeImg,
+		full: bikeFull,
+		width: 600,
+		height: 800,
+		alt: 'Side view of the motorcycle parked by a meadow',
+		caption: 'Parked in the hills'
+	},
+	{
+		id: 'cockpit',
+		src: cockpitImg,
+		full: cockpitFull,
+		width: 600,
+		height: 800,
+		alt: 'The motorcycle’s cockpit in front of a tunnel entrance',
+		caption: 'About to enter the tunnel'
 	}
 ];

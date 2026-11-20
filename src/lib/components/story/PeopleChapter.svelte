@@ -18,7 +18,7 @@
 
 <section id={chapter.id} data-chapter class="chapter relative pb-24">
 	<ChapterHeader {chapter} {number} />
-	<div class="grid gap-10 sm:grid-cols-3 sm:gap-6">
+	<div class="grid gap-10 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
 		{#each chapter.photos ?? [] as photo, i (photo.id)}
 			<div
 				class="reveal flex justify-center {tilts[i % tilts.length]}"

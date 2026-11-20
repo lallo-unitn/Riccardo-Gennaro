@@ -126,15 +126,6 @@ const offSound = project('OFF-SOUND');
 
 export const chapters: Chapter[] = [
 	{
-		id: 'school',
-		short: 'High school',
-		year: '2014',
-		title: 'Where it started',
-		intro: 'A scientific and technological high school in Valdagno.',
-		scene: 'steps',
-		steps: [fromDegree(degree('High School'))]
-	},
-	{
 		id: 'bachelor',
 		short: 'Bachelor’s',
 		year: '2019',
@@ -156,9 +147,15 @@ export const chapters: Chapter[] = [
 			},
 			{
 				when: 'Dec 2022',
-				title: photo('degree').caption,
+				title: photo('bachelor-graduation').caption,
 				body: [],
-				media: { kind: 'photo', photo: photo('degree') }
+				media: { kind: 'photo', photo: photo('bachelor-graduation') }
+			},
+			{
+				when: 'Dec 2022',
+				title: photo('graduation-lunch').caption,
+				body: [],
+				media: { kind: 'photo', photo: photo('graduation-lunch') }
 			}
 		]
 	},
@@ -226,6 +223,24 @@ export const chapters: Chapter[] = [
 		steps: [fromJob(job('KPMG'), { kind: 'word', text: 'KPMG' })]
 	},
 	{
+		id: 'ride',
+		short: 'Riding',
+		year: '2026',
+		title: 'On two wheels',
+		// PLACEHOLDER intro and step text: rewrite in your own words.
+		intro: 'Off the clock: mountain roads, hairpins and the occasional tunnel.',
+		scene: 'stack',
+		steps: [
+			{
+				when: '2026',
+				title: 'Weekend rides',
+				body: ['Mountain passes, lakeside hairpins and a black and red Aprilia.'],
+				links: []
+			}
+		],
+		photos: [photo('bike'), photo('cockpit'), photo('ride')]
+	},
+	{
 		id: 'people',
 		short: 'People',
 		year: '&',
@@ -233,7 +248,16 @@ export const chapters: Chapter[] = [
 		intro: 'Friends, events and the occasional horse costume.',
 		scene: 'people',
 		steps: [],
-		photos: [photo('tann'), photo('stallman'), photo('horsing')]
+		photos: [
+			photo('western-party'),
+			photo('celebration-2022'),
+			photo('sofa'),
+			photo('group-2024'),
+			photo('family-lunch'),
+			photo('event'),
+			photo('stallman'),
+			photo('horsing')
+		]
 	}
 ];
 
